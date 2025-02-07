@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- css links -->
+
+    <link rel="stylesheet" href="/styles/global/style.css">
+    <link rel="stylesheet" href="/styles/header/style.css">
+    <link rel="stylesheet" href="/styles/body/style.css">
+    <link rel="stylesheet" href="../../styles/lasgmainv2.css">
+
+
+    <!-- css linked here -->
+
+    <!-- Bootstrap links -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap linked here -->
+
+</head>
+
+<body>
+
+    <header class="header__fixed">
+
+        <div class="helpers"> 🚀 We just launched v1 of our documentation site, <strong> v2.0 comming soon!</strong> </div>
+
+    <nav class="navbar navbar-expand-sm navbar-light custom__header">
+
+        <div class="container">
+
+            <div class="brandId">
+                <div class="brand__logo"> <img src="/assets/brand/logo.png" alt=""> </div>
+                <div class="brand__name"> <a href="index.html" class="navbar-brand"> style Documentation </a> </div>
+            </div>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+            <div class="collapse navbar-collapse closeup" id="navbarSupportedContent">
+
+                <ul class="navbar-nav">
+
+                    <li class="nav-item"><a class="nav-link" aria-current="page" href="/introduction.html">Get Started</a></li>
+
+                    <li class="nav-item"><a class="nav-link" aria-current="page" href="/pages/style/style.html">Style Blocks</a></li>
+
+                    <li class="nav-item"><a class="nav-link" aria-current="page" href="/pages/components/navigationmenu.html">Components</a></li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+     </nav>
+    
+    </header>
+
+
+
+
+    <div class="container page__body" style="margin-top: 130px;">
+
+
+
+        <div class="row player">
+            <div class="col-3 custom__active custom__row" style="position: fixed; left: 10%;">
+                <div id="list-example" class="list-group">
+                    <a class="list-group-item list-group-item-action" href="../../pages/style/style.html">Font Styling</a>
+                    <a class="list-group-item list-group-item-action" href="../../pages/style/typography.html">Typography</a>
+                    <a class="list-group-item list-group-item-action" href="../style/spacing.html"> Spacing</a>
+                    <a class="list-group-item list-group-item-action" href="../style/links.html">Links</a>
+                    <a class="list-group-item list-group-item-action active" href="../style/list.html">List</a>
+                    <a class="list-group-item list-group-item-action" href="../style/paragraph.html">Paragraph </a>
+                    <a class="list-group-item list-group-item-action" href="../style/color.html">Color</a>
+                    <a class="list-group-item list-group-item-action" href="../style/wrapper.html">Wrapper</a>
+                    <a class="list-group-item list-group-item-action" href="../style/layout.html">Layout</a>
+                    <a class="list-group-item list-group-item-action" href="../style/images.html">Images</a>
+                </div>
+            </div>
+
+            <div class="col-4"></div>
+
+            <div class="col-8 float__r">
+
+                <h2 id="list-item-1">List</h2>
+
+                <h4 id="lis" class="mt-4"></h4>
+
+                <div>
+                    <div>
+                        <p>A list is used to group a set of related items together, providing structure and organization to the content.</p>
+
+                        <h4>Unordered list</h4>
+
+                        <p>An unordered list is used to display a list of items where the order doesn't matter. Each item in the list is marked with a bullet (default), though this can be customized with CSS.
+                        </p>
+
+                        <li><code style="color: var(--bs-code-color);font-size: 0.875em;font-family: var(--bs-font-monospace);">ul</code> - is an abbreivation for <code style="color: var(--bs-code-color);font-size: 0.875em;font-family: var(--bs-font-monospace);">unordered list</code></li>
+
+
+
+                        <div class="mt-3">
+                            <h4>Use Cases of Unordered List</h4>
+        
+                            <ul style='text-align: start;color: rgb(33, 37, 41);background-color: rgb(255, 255, 255);font-size: 16px;font-family: system-ui, -apple-system, "'>
+                              
+                                <li>They can be used to display related items that don't follow a particular order.</li>
+        
+                                <li> Unordered lists are commonly used for navigation menus, where the order of links is not crucial.</li>
+        
+                                <li>Ensure consistent spacing inside containers like cards, banners, or forms.</li>
+                              
+                            </ul>
+                      </div>
+
+
+                        <p class="fst-italic fs-3">Example</p>
+                        <div class="mt-4" style="background-color: #E7E9EB;; border: 1px solid black;">
+
+                            <div class="mx-5 my-3" style="background-color: white ; color black">
+                                <div class="">
+                                    <ul>
+                                        <li>Lagos State</li>
+                                        <li>Lagos State</li>
+                                        <li>Lagos State</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                        <h4 class="mt-4"> Ordered list</h4>
+
+                        <p>An ordered list is used when the order of items is important. Each item in the list is numbered or lettered, depending on the format specified (numeric by default).
+                        </p>
+
+                        <li><code style="color: var(--bs-code-color);font-size: 0.875em;font-family: var(--bs-font-monospace);">ol</code> - is an abbreivation for <code style="color: var(--bs-code-color);font-size: 0.875em;font-family: var(--bs-font-monospace);">ordered list</code></li>
+
+
+                        <div class="mt-3">
+                            <h4>Use Cases of Ordered List</h4>
+        
+                            <ul style='text-align: start;color: rgb(33, 37, 41);background-color: rgb(255, 255, 255);font-size: 16px;font-family: system-ui, -apple-system, "'>
+                              
+                                <li>Use ordered lists for tutorials, guides, or procedures that must be followed in a specific sequence..</li>
+        
+                                <li> Use for items that need to be displayed in order of importance or rank.</li>
+        
+                                <li>Use to list events in chronological order, such as historical events or project milestones.</li>
+
+                                <li>Use for step-by-step instructions to fill out forms or complete online applications.</li>
+
+                                <li>Use to present steps in an algorithm or coding logic.</li>
+
+                                <li>Use for debugging processes or troubleshooting guides.</li>
+                              
+                            </ul>
+                      </div>
+
+
+                        <p class="fst-italic fs-3">Example</p>
+                        <div class="mt-4" style="background-color: #E7E9EB;; border: 1px solid black;">
+
+                            <div class="mx-5 my-3" style="background-color: white ; color black">
+                                <div class="">
+                                    <ol>
+                                        <li>Lagos State</li>
+                                        <li>Lagos State</li>
+                                        <li>Lagos State</li>
+                                    </ol>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <span></span>
+
+
+
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

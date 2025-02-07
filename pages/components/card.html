@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+     <!-- css links -->
+
+     <link rel="stylesheet" href="/styles/global/style.css">
+     <link rel="stylesheet" href="/styles/header/style.css">
+     <link rel="stylesheet" href="/styles/body/style.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-dark.min.css">
+ 
+ 
+     <!-- css linked here -->
+
+     <!-- Bootstrap links -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+
+<!-- Bootstrap linked here -->
+
+<!-- highlight.js link here -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/go.min.js"></script>
+
+<script>hljs.highlightAll();</script>
+
+</head>
+<body>
+
+    <header class="header__fixed">
+
+        <div class="helpers"> 🚀 We just launched v1 of our documentation site, <strong> v2.0 comming soon!</strong> </div>
+
+        <nav class="navbar navbar-expand-sm navbar-light custom__header">
+    
+            <div class="container">
+    
+                <div class="brandId">
+                    <div class="brand__logo"> <img src="/assets/brand/logo.png" alt=""> </div>
+                    <div class="brand__name"> <a href="index.html" class="navbar-brand"> style Documentation </a> </div>
+                </div>
+    
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+    
+                <div class="collapse navbar-collapse closeup" id="navbarSupportedContent">
+    
+                    <ul class="navbar-nav">
+    
+                        <li class="nav-item"><a class="nav-link" aria-current="page" href="/introduction.html">Get Started</a></li>
+    
+                        <li class="nav-item"><a class="nav-link" aria-current="page" href="/pages/style/style.html">Style Blocks</a></li>
+    
+                        <li class="nav-item"><a class="nav-link" aria-current="page" href="/pages/components/navigationmenu.html">Components</a></li>
+    
+                    </ul>
+    
+                </div>
+    
+            </div>
+    
+         </nav>
+    
+    </header>
+        
+
+    <div class="container page__body" style="margin-top: 130px;">
+
+ 
+
+        <div class="row player">
+                <div class="col-3 custom__active custom__row" style="position: fixed; left: 10%;">
+                    <div id="list-example" class="list-group">
+                            <a class="list-group-item list-group-item-action" href="../components/navigationmenu.html">Navigation Menu </a>
+                            <a class="list-group-item list-group-item-action" href="../components/button.html"> Buttons</a>
+                            <a class="list-group-item list-group-item-action" href="/pages/components/gallery.html"> Gallery</a>
+                            <a class="list-group-item list-group-item-action" href="/pages/components/modal.html"> Modal</a>
+                            <a class="list-group-item list-group-item-action active" href="../components/card.html">Cards</a>
+                            <a class="list-group-item list-group-item-action" href="../components/socialmedia.html">Social Media</a>
+                            <a class="list-group-item list-group-item-action" href="../components/footer.html">Footer</a>
+                    </div>
+                </div>
+
+                <div class="col-4"></div>
+
+                <div class="col-8 float__r">
+
+
+                    <h2 id="list-item-1">Cards</h2>
+
+                <h4 id="lis" class="mt-4"></h4>
+
+                <div>
+                    <div>
+                        <p>
+                            Cards are a UI design pattern used to group and display related content in a visually distinct and interactive way. They typically consist of a container with an image, text, and actions like buttons or links.</p>
+
+                        
+
+                        <p> They provide key information about the content (e.g., product name, article title).
+                        </p>
+
+                        <p>Cards are widely used for their flexibility and ease of use in organizing and presenting content.</p>
+
+                        
+
+
+                        
+                        
+                        <p class="fst-italic fs-3">Personnel Card</p>
+                        <div class="mt-4" >
+
+                                <div class="contain" style="box-sizing: border-box;padding: 50px;">
+                                    <div class="group" style="position: relative; box-sizing: border-box; height: 400px;">
+                                        <div class="persoonel_image" style="width: 360px; height: 390px; ">
+                                            <img style="width: 100%;border-radius:0px; object-fit: cover;" src="https://cdn.pmnewsnigeria.com/wp-content/uploads/2023/05/Sanwo-Olus-official-portrait.jpg" alt="">
+                                        </div>
+                                        <div class="name_tag" style="width: 306px; border: 1px; border-radius: 5px; position: absolute; bottom: -40px; z-index: 999999; background-color: #ffffff; transform: translateX(24px); box-shadow: 0 10px 20px 0 #00000014;"  >
+                                            <div class="title" style="text-transform: uppercase; text-align: center; padding: 20px 10px 10px 10px; font-size: 12px; font-weight: 600; letter-spacing: 1.5px;">
+                                                executive Governor
+                                            </div>
+                                            <div class="personnel_name" style="font-size: 18px; font-weight: 700; text-align: center;  padding: 10px 10px 25px 1px;">
+                                                Babajide Olusola Sanwo-Olu
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                        </div>
+
+                        <p class="fst-italic fs-3 p-top-100">source code</p>
+
+                        <pre>
+                            <code class="language-html" style="box-sizing: content-box; word-wrap: break-word;">
+                                    &lt;div class=&quot;contain&quot; style=&quot;box-sizing: border-box;padding: 50px;&quot;&gt;
+                                        &lt;div class=&quot;group&quot; style=&quot;position: relative; box-sizing: border-box; height: 400px;&quot;&gt;
+                                            &lt;div class=&quot;persoonel_image&quot; style=&quot;width: 360px; height: 390px; &quot;&gt;
+                                                &lt;img style=&quot;width: 100%;border-radius:0px; object-fit: cover;&quot; src=&quot;https://cdn.pmnewsnigeria.com/wp-content/uploads/2023/05/Sanwo-Olus-official-portrait.jpg&quot; alt=&quot;&quot;&gt;
+                                            &lt;/div&gt;
+                                            &lt;div class=&quot;name_tag&quot; style=&quot;width: 306px; border: 1px; border-radius: 5px; position: absolute; bottom: -40px; z-index: 999999; background-color: #ffffff; transform: translateX(24px); box-shadow: 0 10px 20px 0 #00000014;&quot;  &gt;
+                                                &lt;div class=&quot;title&quot; style=&quot;text-transform: uppercase; text-align: center; padding: 20px 10px 10px 10px; font-size: 12px; font-weight: 600; letter-spacing: 1.5px;&quot;&gt;
+                                                    executive Governor
+                                                &lt;/div&gt;
+                                                &lt;div class=&quot;personnel_name&quot; style=&quot;font-size: 18px; font-weight: 700; text-align: center;  padding: 10px 10px 25px 1px;&quot;&gt;
+                                                    Babajide Olusola Sanwo-Olu
+                                                &lt;/div&gt;
+                                            &lt;/div&gt;
+                                        &lt;/div&gt;
+                                    &lt;/div&gt;
+
+                            </code>
+                        </pre>
+
+
+                        <p class="fst-italic fs-3">Agency Card</p>
+                        <div class="mt-4" >
+
+                            <div class="agency_card" style="width: 350px; cursor: pointer; padding: 20px;border: .4px solid #eee;box-shadow: 0 10px 20px 0 #00000014;    border-radius: 10px" >
+                                <div class="title_space" style="display: flex; gap: 15px; padding: 20px">
+                            
+                                    <div class="agency_icon" style="width: 30px;">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1792 1792" id="Building">
+                                            <path d="M1472 0q26 0 45 19t19 45v1664q0 26-19 45t-45 19H192q-26 0-45-19t-19-45V64q0-26 19-45t45-19h1280zM640 288v64q0 14 9 23t23 9h64q14 0 23-9t9-23v-64q0-14-9-23t-23-9h-64q-14 0-23 9t-9 23zm0 256v64q0 14 9 23t23 9h64q14 0 23-9t9-23v-64q0-14-9-23t-23-9h-64q-14 0-23 9t-9 23zm0 256v64q0 14 9 23t23 9h64q14 0 23-9t9-23v-64q0-14-9-23t-23-9h-64q-14 0-23 9t-9 23zm0 256v64q0 14 9 23t23 9h64q14 0 23-9t9-23v-64q0-14-9-23t-23-9h-64q-14 0-23 9t-9 23zm-128 320v-64q0-14-9-23t-23-9h-64q-14 0-23 9t-9 23v64q0 14 9 23t23 9h64q14 0 23-9t9-23zm0-256v-64q0-14-9-23t-23-9h-64q-14 0-23 9t-9 23v64q0 14 9 23t23 9h64q14 0 23-9t9-23zm0-256v-64q0-14-9-23t-23-9h-64q-14 0-23 9t-9 23v64q0 14 9 23t23 9h64q14 0 23-9t9-23zm0-256v-64q0-14-9-23t-23-9h-64q-14 0-23 9t-9 23v64q0 14 9 23t23 9h64q14 0 23-9t9-23zm0-256v-64q0-14-9-23t-23-9h-64q-14 0-23 9t-9 23v64q0 14 9 23t23 9h64q14 0 23-9t9-23zm512 1280v-192q0-14-9-23t-23-9H672q-14 0-23 9t-9 23v192q0 14 9 23t23 9h320q14 0 23-9t9-23zm0-512v-64q0-14-9-23t-23-9h-64q-14 0-23 9t-9 23v64q0 14 9 23t23 9h64q14 0 23-9t9-23zm0-256v-64q0-14-9-23t-23-9h-64q-14 0-23 9t-9 23v64q0 14 9 23t23 9h64q14 0 23-9t9-23zm0-256v-64q0-14-9-23t-23-9h-64q-14 0-23 9t-9 23v64q0 14 9 23t23 9h64q14 0 23-9t9-23zm0-256v-64q0-14-9-23t-23-9h-64q-14 0-23 9t-9 23v64q0 14 9 23t23 9h64q14 0 23-9t9-23zm256 1024v-64q0-14-9-23t-23-9h-64q-14 0-23 9t-9 23v64q0 14 9 23t23 9h64q14 0 23-9t9-23zm0-256v-64q0-14-9-23t-23-9h-64q-14 0-23 9t-9 23v64q0 14 9 23t23 9h64q14 0 23-9t9-23zm0-256v-64q0-14-9-23t-23-9h-64q-14 0-23 9t-9 23v64q0 14 9 23t23 9h64q14 0 23-9t9-23zm0-256v-64q0-14-9-23t-23-9h-64q-14 0-23 9t-9 23v64q0 14 9 23t23 9h64q14 0 23-9t9-23zm0-256v-64q0-14-9-23t-23-9h-64q-14 0-23 9t-9 23v64q0 14 9 23t23 9h64q14 0 23-9t9-23z" fill="#78e183" class="color000000 svgShape"></path>
+                                          </svg>
+                                    </div>
+                            
+                                    <div class="agency_name " style="font-size: 14px; font-weight: 600; line-height: 24px;">
+                                          Agency, Ministry Name
+                                    </div>
+                            
+                                </div>
+                                <div class="content" style="padding-left: 20px; color: #777; line-height: 22px;font-size: 12px;">
+                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto earum, incidunt at veniam, esse dolore saepe iusto quod dicta eligendi ut quam voluptates quaerat pariatur perspiciatis, tempore fugit nesciunt natus?
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <p class="fst-italic fs-3 m-top-100">source code</p>
+
+                        <pre>
+                            <code class="language-html" style="box-sizing: content-box; word-wrap: break-word;">
+                                &lt;div class=&quot;agency_card&quot; style=&quot;width: 350px; cursor: pointer; padding: 20px;border: .4px solid #eee;box-shadow: 0 10px 20px 0 #00000014;    border-radius: 10px&quot; &gt;
+                                &lt;div class=&quot;title_space&quot; style=&quot;display: flex; gap: 15px; padding: 20px&quot;&gt;
+                            
+                                    &lt;div class=&quot;agency_icon&quot; style=&quot;width: 30px;&quot;&gt;
+                                        &lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 1792 1792&quot; id=&quot;Building&quot;&gt;
+                                            &lt;path d=&quot;M1472 0q26 0 45 19t19 45v1664q0 26-19 45t-45 19H192q-26 0-45-19t-19-45V64q0-26 19-45t45-19h1280zM640 288v64q0 14 9 23t23 9h64q14 0 23-9t9-23v-64q0-14-9-23t-23-9h-64q-14 0-23 9t-9 23zm0 256v64q0 14 9 23t23 9h64q14 0 23-9t9-23v-64q0-14-9-23t-23-9h-64q-14 0-23 9t-9 23zm0 256v64q0 14 9 23t23 9h64q14 0 23-9t9-23v-64q0-14-9-23t-23-9h-64q-14 0-23 9t-9 23zm0 256v64q0 14 9 23t23 9h64q14 0 23-9t9-23v-64q0-14-9-23t-23-9h-64q-14 0-23 9t-9 23zm-128 320v-64q0-14-9-23t-23-9h-64q-14 0-23 9t-9 23v64q0 14 9 23t23 9h64q14 0 23-9t9-23zm0-256v-64q0-14-9-23t-23-9h-64q-14 0-23 9t-9 23v64q0 14 9 23t23 9h64q14 0 23-9t9-23zm0-256v-64q0-14-9-23t-23-9h-64q-14 0-23 9t-9 23v64q0 14 9 23t23 9h64q14 0 23-9t9-23zm0-256v-64q0-14-9-23t-23-9h-64q-14 0-23 9t-9 23v64q0 14 9 23t23 9h64q14 0 23-9t9-23zm0-256v-64q0-14-9-23t-23-9h-64q-14 0-23 9t-9 23v64q0 14 9 23t23 9h64q14 0 23-9t9-23zm512 1280v-192q0-14-9-23t-23-9H672q-14 0-23 9t-9 23v192q0 14 9 23t23 9h320q14 0 23-9t9-23zm0-512v-64q0-14-9-23t-23-9h-64q-14 0-23 9t-9 23v64q0 14 9 23t23 9h64q14 0 23-9t9-23zm0-256v-64q0-14-9-23t-23-9h-64q-14 0-23 9t-9 23v64q0 14 9 23t23 9h64q14 0 23-9t9-23zm0-256v-64q0-14-9-23t-23-9h-64q-14 0-23 9t-9 23v64q0 14 9 23t23 9h64q14 0 23-9t9-23zm0-256v-64q0-14-9-23t-23-9h-64q-14 0-23 9t-9 23v64q0 14 9 23t23 9h64q14 0 23-9t9-23zm256 1024v-64q0-14-9-23t-23-9h-64q-14 0-23 9t-9 23v64q0 14 9 23t23 9h64q14 0 23-9t9-23zm0-256v-64q0-14-9-23t-23-9h-64q-14 0-23 9t-9 23v64q0 14 9 23t23 9h64q14 0 23-9t9-23zm0-256v-64q0-14-9-23t-23-9h-64q-14 0-23 9t-9 23v64q0 14 9 23t23 9h64q14 0 23-9t9-23zm0-256v-64q0-14-9-23t-23-9h-64q-14 0-23 9t-9 23v64q0 14 9 23t23 9h64q14 0 23-9t9-23zm0-256v-64q0-14-9-23t-23-9h-64q-14 0-23 9t-9 23v64q0 14 9 23t23 9h64q14 0 23-9t9-23z&quot; fill=&quot;#78e183&quot; class=&quot;color000000 svgShape&quot;&gt;&lt;/path&gt;
+                                          &lt;/svg&gt;
+                                    &lt;/div&gt;
+                            
+                                    &lt;div class=&quot;agency_name &quot; style=&quot;font-size: 14px; font-weight: 600; line-height: 24px;&quot;&gt;
+                                          Agency, Ministry Name
+                                    &lt;/div&gt;
+                            
+                                &lt;/div&gt;
+                                &lt;div class=&quot;content&quot; style=&quot;padding-left: 20px; color: #777; line-height: 22px;font-size: 12px;&quot;&gt;
+                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto earum, incidunt at veniam, esse dolore saepe iusto quod dicta eligendi ut quam voluptates quaerat pariatur perspiciatis, tempore fugit nesciunt natus?
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+
+
+                            </code>
+                        </pre>
+
+
+
+                        <p class="fst-italic fs-3">News Card</p>
+                        <div class="mt-4" >
+
+                            <div class="news_build " style="margin: 20px;width: 300px; ">
+                                <div class="news_image" style="width: 300px; height: 200px; background-color: #777; border-radius: 15px;" >
+                                  
+                                </div>
+                            
+                                <div class="news_date"  style="font-size: 14px; font-weight: 500; padding-top: 10px;">
+                                        DD-MM-YYYY
+                                </div>
+                            
+                                <div class="news_headline" style="font-size: 14px; font-weight: 500;padding-top: 10px;">
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                                </div>
+                            
+                                <div class="new_footer" style="display: flex; gap: 10px; padding-top: 10px;">
+                                    <div class="news_tag" style=" border: .1px solid #78e183; background-color: #78e183; l; text-transform: uppercase; padding: 3px; font-size: 10px; font-weight: 500; border-radius: 5px;" >
+                                        category-tag
+                                    </div>
+                            
+                                    <div class="news_timer_icon">
+                            
+                                    </div>
+                            
+                                    <div class="read_timer" style="text-transform: uppercase; font-size: 12px;">
+                                        5 Min Read
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <p class="fst-italic fs-3">source code</p>
+
+                        <pre>
+                            <code class="language-html" style="box-sizing: content-box; word-wrap: break-word;">
+                                &lt;div class=&quot;news_build &quot; style=&quot;margin: 20px;width: 300px; &quot;&gt;
+                                &lt;div class=&quot;news_image&quot; style=&quot;width: 300px; height: 200px; background-color: #777; border-radius: 15px;&quot; &gt;
+                                  
+                                &lt;/div&gt;
+                            
+                                &lt;div class=&quot;news_date&quot;  style=&quot;font-size: 14px; font-weight: 500; padding-top: 10px;&quot;&gt;
+                                        DD-MM-YYYY
+                                &lt;/div&gt;
+                            
+                                &lt;div class=&quot;news_headline&quot; style=&quot;font-size: 14px; font-weight: 500;padding-top: 10px;&quot;&gt;
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                                &lt;/div&gt;
+                            
+                                &lt;div class=&quot;new_footer&quot; style=&quot;display: flex; gap: 10px; padding-top: 10px;&quot;&gt;
+                                    &lt;div class=&quot;news_tag&quot; style=&quot; border: .1px solid #78e183; background-color: #78e183; l; text-transform: uppercase; padding: 3px; font-size: 10px; font-weight: 500; border-radius: 5px;&quot; &gt;
+                                        category-tag
+                                    &lt;/div&gt;
+                            
+                                    &lt;div class=&quot;news_timer_icon&quot;&gt;
+                            
+                                    &lt;/div&gt;
+                            
+                                    &lt;div class=&quot;read_timer&quot; style=&quot;text-transform: uppercase; font-size: 12px;&quot;&gt;
+                                        5 Min Read
+                                    &lt;/div&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+
+                            </code>
+                        </pre>
+
+
+
+                        <p class="fst-italic fs-3">Category Card</p>
+                        <div class="mt-4" >
+
+                            <div class="category_card" style="width: 330px; height: 330px; box-sizing: border-box;border-radius: 15px; margin: 100px; display: flex; flex-direction: column; justify-content: space-between ; align-items: center; border: 1px solid #eee; box-shadow: 0 10px 20px 0 #00000014;">
+                                <div class="category_top" style="display: flex; flex-direction: column; align-items: center; padding: 45px 0; gap: 30px;">
+                                     <div class="category_icon" style="width: 40px  ; margin: 5px 0; ">
+                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1792 1792" id="Building">
+                                             <path d="M1472 0q26 0 45 19t19 45v1664q0 26-19 45t-45 19H192q-26 0-45-19t-19-45V64q0-26 19-45t45-19h1280zM640 288v64q0 14 9 23t23 9h64q14 0 23-9t9-23v-64q0-14-9-23t-23-9h-64q-14 0-23 9t-9 23zm0 256v64q0 14 9 23t23 9h64q14 0 23-9t9-23v-64q0-14-9-23t-23-9h-64q-14 0-23 9t-9 23zm0 256v64q0 14 9 23t23 9h64q14 0 23-9t9-23v-64q0-14-9-23t-23-9h-64q-14 0-23 9t-9 23zm0 256v64q0 14 9 23t23 9h64q14 0 23-9t9-23v-64q0-14-9-23t-23-9h-64q-14 0-23 9t-9 23zm-128 320v-64q0-14-9-23t-23-9h-64q-14 0-23 9t-9 23v64q0 14 9 23t23 9h64q14 0 23-9t9-23zm0-256v-64q0-14-9-23t-23-9h-64q-14 0-23 9t-9 23v64q0 14 9 23t23 9h64q14 0 23-9t9-23zm0-256v-64q0-14-9-23t-23-9h-64q-14 0-23 9t-9 23v64q0 14 9 23t23 9h64q14 0 23-9t9-23zm0-256v-64q0-14-9-23t-23-9h-64q-14 0-23 9t-9 23v64q0 14 9 23t23 9h64q14 0 23-9t9-23zm0-256v-64q0-14-9-23t-23-9h-64q-14 0-23 9t-9 23v64q0 14 9 23t23 9h64q14 0 23-9t9-23zm512 1280v-192q0-14-9-23t-23-9H672q-14 0-23 9t-9 23v192q0 14 9 23t23 9h320q14 0 23-9t9-23zm0-512v-64q0-14-9-23t-23-9h-64q-14 0-23 9t-9 23v64q0 14 9 23t23 9h64q14 0 23-9t9-23zm0-256v-64q0-14-9-23t-23-9h-64q-14 0-23 9t-9 23v64q0 14 9 23t23 9h64q14 0 23-9t9-23zm0-256v-64q0-14-9-23t-23-9h-64q-14 0-23 9t-9 23v64q0 14 9 23t23 9h64q14 0 23-9t9-23zm0-256v-64q0-14-9-23t-23-9h-64q-14 0-23 9t-9 23v64q0 14 9 23t23 9h64q14 0 23-9t9-23zm256 1024v-64q0-14-9-23t-23-9h-64q-14 0-23 9t-9 23v64q0 14 9 23t23 9h64q14 0 23-9t9-23zm0-256v-64q0-14-9-23t-23-9h-64q-14 0-23 9t-9 23v64q0 14 9 23t23 9h64q14 0 23-9t9-23zm0-256v-64q0-14-9-23t-23-9h-64q-14 0-23 9t-9 23v64q0 14 9 23t23 9h64q14 0 23-9t9-23zm0-256v-64q0-14-9-23t-23-9h-64q-14 0-23 9t-9 23v64q0 14 9 23t23 9h64q14 0 23-9t9-23zm0-256v-64q0-14-9-23t-23-9h-64q-14 0-23 9t-9 23v64q0 14 9 23t23 9h64q14 0 23-9t9-23z" fill="#78e183" class="color000000 svgShape"></path>
+                                           </svg>
+                                     </div>
+                             
+                                     <div class="category_name" style="font-weight: 600;font-size: 18px;">
+                             
+                                         Category
+                                         
+                                     </div>
+                                </div>
+                             
+                                <div class="category_content" style="font-size: 14px; display: flex; justify-self: center; color: #515050; width:80%; text-align: center; line-height: 21px; padding-bottom: 55px;">
+                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae ipsum minima ad repudiandae 
+                                </div>
+                             </div>
+
+                        </div>
+
+                        <p class="fst-italic fs-3">source code</p>
+
+                        <pre>
+                            <code class="language-html" style="box-sizing: content-box; word-wrap: break-word;">
+                                &lt;div class=&quot;category_card&quot; style=&quot;width: 330px; height: 330px; box-sizing: border-box;border-radius: 15px; margin: 100px; display: flex; flex-direction: column; justify-content: space-between ; align-items: center; border: 1px solid #eee; box-shadow: 0 10px 20px 0 #00000014;&quot;&gt;
+                                &lt;div class=&quot;category_top&quot; style=&quot;display: flex; flex-direction: column; align-items: center; padding: 45px 0; gap: 30px;&quot;&gt;
+                                        &lt;div class=&quot;category_icon&quot; style=&quot;width: 40px  ; margin: 5px 0; &quot;&gt;
+                                            &lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 1792 1792&quot; id=&quot;Building&quot;&gt;
+                                                &lt;path d=&quot;M1472 0q26 0 45 19t19 45v1664q0 26-19 45t-45 19H192q-26 0-45-19t-19-45V64q0-26 19-45t45-19h1280zM640 288v64q0 14 9 23t23 9h64q14 0 23-9t9-23v-64q0-14-9-23t-23-9h-64q-14 0-23 9t-9 23zm0 256v64q0 14 9 23t23 9h64q14 0 23-9t9-23v-64q0-14-9-23t-23-9h-64q-14 0-23 9t-9 23zm0 256v64q0 14 9 23t23 9h64q14 0 23-9t9-23v-64q0-14-9-23t-23-9h-64q-14 0-23 9t-9 23zm0 256v64q0 14 9 23t23 9h64q14 0 23-9t9-23v-64q0-14-9-23t-23-9h-64q-14 0-23 9t-9 23zm-128 320v-64q0-14-9-23t-23-9h-64q-14 0-23 9t-9 23v64q0 14 9 23t23 9h64q14 0 23-9t9-23zm0-256v-64q0-14-9-23t-23-9h-64q-14 0-23 9t-9 23v64q0 14 9 23t23 9h64q14 0 23-9t9-23zm0-256v-64q0-14-9-23t-23-9h-64q-14 0-23 9t-9 23v64q0 14 9 23t23 9h64q14 0 23-9t9-23zm0-256v-64q0-14-9-23t-23-9h-64q-14 0-23 9t-9 23v64q0 14 9 23t23 9h64q14 0 23-9t9-23zm0-256v-64q0-14-9-23t-23-9h-64q-14 0-23 9t-9 23v64q0 14 9 23t23 9h64q14 0 23-9t9-23zm512 1280v-192q0-14-9-23t-23-9H672q-14 0-23 9t-9 23v192q0 14 9 23t23 9h320q14 0 23-9t9-23zm0-512v-64q0-14-9-23t-23-9h-64q-14 0-23 9t-9 23v64q0 14 9 23t23 9h64q14 0 23-9t9-23zm0-256v-64q0-14-9-23t-23-9h-64q-14 0-23 9t-9 23v64q0 14 9 23t23 9h64q14 0 23-9t9-23zm0-256v-64q0-14-9-23t-23-9h-64q-14 0-23 9t-9 23v64q0 14 9 23t23 9h64q14 0 23-9t9-23zm0-256v-64q0-14-9-23t-23-9h-64q-14 0-23 9t-9 23v64q0 14 9 23t23 9h64q14 0 23-9t9-23zm256 1024v-64q0-14-9-23t-23-9h-64q-14 0-23 9t-9 23v64q0 14 9 23t23 9h64q14 0 23-9t9-23zm0-256v-64q0-14-9-23t-23-9h-64q-14 0-23 9t-9 23v64q0 14 9 23t23 9h64q14 0 23-9t9-23zm0-256v-64q0-14-9-23t-23-9h-64q-14 0-23 9t-9 23v64q0 14 9 23t23 9h64q14 0 23-9t9-23zm0-256v-64q0-14-9-23t-23-9h-64q-14 0-23 9t-9 23v64q0 14 9 23t23 9h64q14 0 23-9t9-23zm0-256v-64q0-14-9-23t-23-9h-64q-14 0-23 9t-9 23v64q0 14 9 23t23 9h64q14 0 23-9t9-23z&quot; fill=&quot;#78e183&quot; class=&quot;color000000 svgShape&quot;&gt;&lt;/path&gt;
+                                            &lt;/svg&gt;
+                                        &lt;/div&gt;
+                                
+                                        &lt;div class=&quot;category_name&quot; style=&quot;font-weight: 600;font-size: 18px;&quot;&gt;
+                                
+                                            Category
+                                            
+                                        &lt;/div&gt;
+                                &lt;/div&gt;
+                                
+                                &lt;div class=&quot;category_content&quot; style=&quot;font-size: 14px; display: flex; justify-self: center; color: #515050; width:80%; text-align: center; line-height: 21px; padding-bottom: 35px;&quot;&gt;
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae ipsum minima ad repudiandae 
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                            
+
+                            </code>
+                        </pre>
+                
+
+                    </div>
+
+
+                    <span></span>
+                       
+                    
+                </div>
+
+        </div>       
+               
+</div>
+    
+</body>
+</html>

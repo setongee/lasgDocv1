@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+     <!-- css links -->
+
+     <link rel="stylesheet" href="styles/global/style.css">
+     <link rel="stylesheet" href="styles/header/style.css">
+     <link rel="stylesheet" href="styles/body/style.css">
+     <link rel="stylesheet" href="styles/footer/style.css">
+ 
+ 
+     <!-- css linked here -->
+
+     <!-- Bootstrap links -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+
+<!-- Bootstrap linked here -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <header class="header__fixed">
+
+        <div class="helpers"> 🚀 We just launched v1 of our documentation site, <strong> v2.0 comming soon!</strong> </div>
+
+        <nav class="navbar navbar-expand-sm navbar-light custom__header">
+    
+            <div class="container">
+    
+                <div class="brandId">
+                    <div class="brand__logo"> <img src="/assets/brand/logo.png" alt=""> </div>
+                    <div class="brand__name"> <a href="index.html" class="navbar-brand"> style Documentation </a> </div>
+                </div>
+    
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+    
+                <div class="collapse navbar-collapse closeup" id="navbarSupportedContent">
+    
+                    <ul class="navbar-nav">
+    
+                        <li class="nav-item"><a class="nav-link" aria-current="page" href="introduction.html">Get Started</a></li>
+    
+                        <li class="nav-item"><a class="nav-link" aria-current="page" href="/pages/style/style.html">Style Blocks</a></li>
+    
+                        <li class="nav-item"><a class="nav-link" aria-current="page" href="/pages/components/navigationmenu.html">Components</a></li>
+    
+                    </ul>
+    
+                </div>
+    
+            </div>
+    
+         </nav>
+    
+    </header>
+        
+
+        <div class="container page__body" style="margin-top: 130px;">
+
+            <div class="row player">
+
+                    <div class="col-3 custom__active custom__row" style="position: fixed">
+
+                        <div id="list-example" class="list-group">
+
+                                <a class="list-group-item list-group-item-action active" href="../introduction.html">Introduction</a>
+                                <a class="list-group-item list-group-item-action" href="../installation.html"> Installation</a>
+                                <a class="list-group-item list-group-item-action" href="../font.html">Fonts</a>
+                                <a class="list-group-item list-group-item-action" href="../starterpack.html"> Starter Pack and Template</a>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-4"></div>
+
+                    <div class="col-8 float__r">
+    
+                            <h5 id="">Introduction</h5>
+    
+                            <div>
+                                <p> This is a documentation of beautifully designed components that you can copy and paste into your Lagos State web applications giving you 100% customization.</p>
+
+                                <span>This is not a component library; rather, it's a collection of reusable components that you can easily copy and paste into your web applications.</span>
+
+                                <!-- accordion partttt -->
+
+                                <h5 class="mt-5"> Frequently Asked Questions </h5>
+
+                                <div class="accordion accordion-flush" id="accordionFlushExample">
+                                    <div class="accordion-item">
+                                      <h2 class="accordion-header" id="flush-headingOne">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                            Why copy/paste and not packaged as a dependency?
+                                        </button>
+
+                                      </h2>
+                                      <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">
+                                            The idea behind this is to give you ownership and control over the code, allowing you to decide how the components are built and styled.
+
+                                            Start with some sensible defaults, then customize the components to your needs.
+
+                                            One of the drawbacks of packaging the components in an npm package is that the style is coupled with the implementation. The design of your components should be separate from their implementation.
+                                        </div>
+                                      </div>
+                                    </div>
+
+                                    <div class="accordion-item">
+                                      <h2 class="accordion-header" id="flush-headingTwo">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                            Do you plan to publish it as an npm package?
+                                        </button>
+                                      </h2>
+
+                                                <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                                    <div class="accordion-body">
+                                                        No. I have no plans to publish it as an npm package.
+                                                    </div>
+                                                </div>
+                                                </div>
+
+                                                <div class="accordion-item">
+                                                <h2 class="accordion-header" id="flush-headingThree">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                                        Which frameworks are supported?
+                                                    </button>
+
+                                                </h2>
+                                                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                                    <div class="accordion-body">
+                                                        You can use any framework that supports React. Next.js, Astro, Remix, Gatsby etc.
+                                                    </div>
+                                      </div>
+
+                                    </div>
+                                  </div>
+
+                            </div>
+    
+                        </div>
+                    </div>
+    
+            </div>       
+                   
+    </div>
+    
+</body>
+</html>

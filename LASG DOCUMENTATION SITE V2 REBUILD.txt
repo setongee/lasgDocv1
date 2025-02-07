@@ -1,0 +1,18 @@
+
+
+
+
+version 2 
+
+
+top
+bottom
+gap
+update background colors
+update text colors
+grid 
+height
+width
+text align, justify content
+update font sizes
+update font weight

@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+     <!-- css links -->
+
+     <link rel="stylesheet" href="/styles/global/style.css">
+     <link rel="stylesheet" href="/styles/header/style.css">
+     <link rel="stylesheet" href="/styles/body/style.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-dark.min.css">
+ 
+ 
+ 
+     <!-- css linked here -->
+
+     <!-- Bootstrap links -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+
+<!-- Bootstrap linked here -->
+
+<!-- highlight.js links -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/go.min.js"></script>
+
+<script>hljs.highlightAll();</script>
+
+
+</head>
+<body>
+
+    <header class="header__fixed">
+
+        <div class="helpers"> 🚀 We just launched v1 of our documentation site, <strong>v2.0 upcoming</strong> </div>
+    
+        <nav class="navbar navbar-expand-sm navbar-dark custom__header">
+    
+            <div class="container">
+    
+                <div class="brandId">
+                    <div class="brand__logo"> <img src="/assets/brand/logo.png" alt=""> </div>
+                    <div class="brand__name"> <a href="/index.html" class="navbar-brand"> style Documentation </a> </div>
+                </div>
+    
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+    
+                <div class="collapse navbar-collapse closeup" id="navbarSupportedContent">
+    
+                    <ul class="navbar-nav">
+    
+                        <li class="nav-item"><a class="nav-link" aria-current="page" href="/introduction.html">Get Started</a></li>
+    
+                        <li class="nav-item"><a class="nav-link" aria-current="page" href="/pages/style/style.html">Style Blocks</a></li>
+    
+                        <li class="nav-item"><a class="nav-link nav__active" aria-current="page" href="/pages/components/navigationmenu.html">Components</a></li>
+    
+                    </ul>
+    
+                </div>
+    
+            </div>
+    
+        </nav>
+    
+    </header>
+        
+
+    <div class="container page__body" style="margin-top: 130px;">
+
+ 
+
+        <div class="row player">
+                <div class="col-3 custom__active custom__row" style="position: fixed; left: 10%;">
+                    <div id="list-example" class="list-group">
+                            <a class="list-group-item list-group-item-action" href="../components/navigationmenu.html">Navigation Menu </a>
+                            <a class="list-group-item list-group-item-action" href="../components/button.html"> Buttons</a>
+                            <a class="list-group-item list-group-item-action" href="/pages/components/gallery.html"> Gallery</a>
+                            <a class="list-group-item list-group-item-action" href="/pages/components/modal.html"> Modal</a>
+                            <a class="list-group-item list-group-item-action" href="../components/card.html">Cards</a>
+                            <a class="list-group-item list-group-item-action" href="../components/socialmedia.html">Social Media</a>
+                            <a class="list-group-item list-group-item-action active" href="../components/footer.html">Footer</a>
+                    </div>
+                </div>
+
+                <div class="col-4"></div>
+
+                <div class="col-8 float__r">
+
+
+                    <h2 id="list-item-1">Footer</h2>
+
+                <h4 id="lis" class="mt-4"></h4>
+
+                <div>
+                    <div>
+                        <p>A footer is the bottom section of a webpage that typically contains additional information or links that are less central to the main content but still important for users.</p>
+
+                        
+
+                        <p>The footer is a useful area for supporting user navigation and displaying additional resources or company details without cluttering the main content area. </p>
+
+                       
+                        <p class="fst-italic fs-3 d-none d-md-block">Example</p>
+
+                        <footer class="d-none d-md-block" style="background-color:#131414; padding: 0; color: #fffcf1; box-sizing: border-box; ">
+                            <div class="footer_body" >
+                        
+                                <div class="footer_header" style="padding-top: 60px; margin-bottom: 60px ; display: flex; justify-content: space-between; align-items: center; @media(min-width: 991.98px) { background-color: black; }">
+                        
+                                    <div class="greetings" style="display: flex; gap: 10px; align-items: center;">
+                        
+                                        <div class="header_content" style="font-size: 60px; font-weight: 700;letter-spacing: -3px;">
+                                            Lagos,<span style="color: #78e183;"> good morning </span>
+                                        </div>
+                            
+                                        <div class="day_nighticon" style="width: 55px;">
+                                            <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 512 512" viewBox="0 0 512 512" id="sun">
+                                                <g>
+                                                  <circle cx="255.9" cy="256" r="124.4" fill="#fed402"></circle>
+                                                  <path fill="#efc514" d="M293.3,137.3c23,22.6,37.3,54,37.3,88.8c0,68.7-55.7,124.4-124.4,124.4c-13,0-25.5-2-37.3-5.7
+                                                      c22.4,22,53.1,35.5,87,35.5c68.7,0,124.4-55.7,124.4-124.4C380.4,200.3,343.7,153.1,293.3,137.3z"></path>
+                                                  <path fill="#fedf30" d="M255.9 95.3c13.2 0 26.1 1.6 38.4 4.6 6.5 1.6 11.9-5.1 9.1-11.1L263.3 4.5c-2.9-6-11.5-6-14.4 0l-40.2 84.3c-2.9 6 2.5 12.7 9.1 11.1C229.8 96.9 242.7 95.3 255.9 95.3zM255.9 416.7c-13.2 0-26.1-1.6-38.4-4.6-6.5-1.6-11.9 5.1-9.1 11.1l40.2 84.3c2.9 6 11.5 6 14.4 0l40.2-84.3c2.9-6-2.5-12.7-9.1-11.1C282.1 415.1 269.2 416.7 255.9 416.7zM507.5 248.8l-84.3-40.2c-6-2.9-12.7 2.5-11.1 9.1 3 12.3 4.6 25.1 4.6 38.4 0 13.3-1.6 26.1-4.6 38.4-1.6 6.5 5.1 11.9 11.1 9.1l84.3-40.2C513.5 260.3 513.5 251.7 507.5 248.8zM95.3 256c0-13.2 1.6-26.1 4.6-38.4 1.6-6.5-5.1-11.9-11.1-9.1L4.5 248.7c-6 2.9-6 11.5 0 14.4l84.3 40.2c6 2.9 12.7-2.5 11.1-9.1C96.9 282.1 95.3 269.2 95.3 256z"></path>
+                                                  <path fill="#fed402" d="M171.3 104.2L83.2 73c-6.3-2.2-12.4 3.8-10.2 10.2l31.2 88.1c2.2 6.3 10.8 7.2 14.3 1.5 13.4-22.2 32.1-40.9 54.3-54.3C178.5 115 177.6 106.4 171.3 104.2zM393.4 339.1c-13.4 22.2-32.1 40.9-54.3 54.3-5.7 3.5-4.8 12 1.5 14.3l88.1 31.2c6.3 2.2 12.4-3.8 10.2-10.2l-31.2-88.1C405.5 334.3 396.9 333.4 393.4 339.1zM339.1 118.4c22.2 13.4 40.9 32.1 54.3 54.3 3.5 5.7 12 4.8 14.3-1.5l31.2-88.1c2.2-6.3-3.8-12.4-10.2-10.2l-88.1 31.2C334.3 106.4 333.4 115 339.1 118.4zM104.2 340.6L73 428.8c-2.2 6.3 3.8 12.4 10.2 10.2l88.1-31.2c6.3-2.2 7.2-10.8 1.5-14.3-22.2-13.4-40.9-32.1-54.3-54.3C115 333.4 106.4 334.3 104.2 340.6z"></path>
+                                                </g>
+                                              </svg>
+                                        </div>
+                        
+                                    </div>
+                        
+                                    <div class="socialmedia_iconlinks" style="display: flex; gap: 30px; align-items: center;">
+                        
+                                        <div class="social_icon" style="width: 20px;">
+                                            <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 16 16" id="Instagram">
+                                                <path d="M11 0H5a5 5 0 0 0-5 5v6a5 5 0 0 0 5 5h6a5 5 0 0 0 5-5V5a5 5 0 0 0-5-5zm3.5 11c0 1.93-1.57 3.5-3.5 3.5H5c-1.93 0-3.5-1.57-3.5-3.5V5c0-1.93 1.57-3.5 3.5-3.5h6c1.93 0 3.5 1.57 3.5 3.5v6z" fill="#ffffff" class="color000000 svgShape"></path>
+                                                <path d="M8 4a4 4 0 1 0 0 8 4 4 0 0 0 0-8zm0 6.5A2.503 2.503 0 0 1 5.5 8c0-1.379 1.122-2.5 2.5-2.5s2.5 1.121 2.5 2.5c0 1.378-1.122 2.5-2.5 2.5z" fill="#ffffff" class="color000000 svgShape"></path>
+                                                <circle cx="12.3" cy="3.7" r=".533" fill="#ffffff" class="color000000 svgShape"></circle>
+                                              </svg>
+                                        </div>
+                        
+                                        <div class="social_icon" style="width: 20px;">
+                                            <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 100 100" id="Linkedin">
+                                                <path d="M87.877 5.608H11.174c-3.673 0-6.65 2.886-6.65 6.448v77.101c0 3.562 2.978 6.451 6.65 6.451h76.703c3.673 0 6.646-2.89 6.646-6.451V12.056c0-3.561-2.973-6.448-6.646-6.448zM31.809 80.944H18.211V40.31h13.598v40.634zm-6.798-46.185h-.091c-4.56 0-7.516-3.119-7.516-7.023 0-3.983 3.043-7.017 7.693-7.017 4.651 0 7.512 3.033 7.602 7.017 0 3.905-2.95 7.023-7.688 7.023zm55.816 46.185H67.233v-21.74c0-5.464-1.97-9.191-6.886-9.191-3.761 0-5.993 2.515-6.973 4.942-.364.868-.453 2.08-.453 3.292v22.696H39.329s.178-36.823 0-40.634h13.593v5.761c1.805-2.768 5.029-6.717 12.249-6.717 8.947 0 15.656 5.804 15.656 18.291v23.3zM52.834 46.199c.024-.038.056-.084.088-.128v.128h-.088z" fill="#ffffff" class="color000000 svgShape"></path>
+                                              </svg>
+                                        </div>
+                        
+                                        <div class="social_icon" style="width: 20px;">
+                                            <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 16 16" id="Facebook">
+                                                <path fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M7.5 15.5H2c-.83 0-1.5-.67-1.5-1.5V2C.5 1.17 1.17.5 2 .5h12c.83 0 1.5.67 1.5 1.5v12c0 .83-.67 1.5-1.5 1.5h-3.5V10H12l1-2.5h-2.5v-2c0-.55.45-.5 1-.5h1V2.5h-2c-.83 0-1.58.34-2.12.88S7.5 4.67 7.5 5.5v2h-2V10h2v5.5z" clip-rule="evenodd" class="colorStroke000000 svgStroke"></path>
+                                              </svg>
+                                        </div>
+                        
+                                        <div class="social_icon" style="width: 25px;">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" id="Twitter">
+                                                <path fill="#050505" fill-rule="evenodd" d="m60,12c0-4.42-3.58-8-8-8H12C7.58,4,4,7.58,4,12v40c0,4.42,3.58,8,8,8h40c4.42,0,8-3.58,8-8V12h0Z" class="color050505 svgShape"></path>
+                                                <path fill="#ffffff" d="m15.07,48.28h4l10.68-12.14,9.29,12.12h10.86l-14.25-18.84,12.06-13.7h-4l-9.91,11.26-8.5-11.25h-11.21l13.79,17.99-12.82,14.57Zm5.11-29.56h3.64l20.06,26.54h-3.35l-20.34-26.54Z" class="colorffffff svgShape"></path>
+                                              </svg>
+                                        </div>
+                        
+                                        <div class="social_icon" style="width: 23px;">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="youtube">
+                                                <path d="M23,9.71a8.5,8.5,0,0,0-.91-4.13,2.92,2.92,0,0,0-1.72-1A78.36,78.36,0,0,0,12,4.27a78.45,78.45,0,0,0-8.34.3,2.87,2.87,0,0,0-1.46.74c-.9.83-1,2.25-1.1,3.45a48.29,48.29,0,0,0,0,6.48,9.55,9.55,0,0,0,.3,2,3.14,3.14,0,0,0,.71,1.36,2.86,2.86,0,0,0,1.49.78,45.18,45.18,0,0,0,6.5.33c3.5.05,6.57,0,10.2-.28a2.88,2.88,0,0,0,1.53-.78,2.49,2.49,0,0,0,.61-1,10.58,10.58,0,0,0,.52-3.4C23,13.69,23,10.31,23,9.71ZM9.74,14.85V8.66l5.92,3.11C14,12.69,11.81,13.73,9.74,14.85Z" fill="#ffffff" class="color000000 svgShape"></path>
+                                              </svg>
+                                        </div>
+                                        
+                        
+                                    </div>
+                        
+                                </div>
+                        
+                               <div class="flex_category"  style="display: flex; gap: 90px;margin-bottom: 60px;">
+                                        <div class="column "  style="box-sizing: border-box;">
+                                            <div class="column_heading" style=" text-transform: uppercase; letter-spacing: 1.2px; font-size: 12px; padding-bottom: 30px; font-weight: 600;">
+                                                category
+                                            </div>
+                        
+                                            <div class="column_list" style=" display: flex; flex-direction: column; gap: 30px;">
+                        
+                                                <div class="column_nav" style=" display: flex; gap: 10px; align-items: center;">
+                                                    <svg width="12" height="12" viewBox="0 0 24 24" stroke-width="3" fill="none" xmlns="http://www.w3.org/2000/svg" color="currentColor"><path d="M6.00005 19L19 5.99996M19 5.99996V18.48M19 5.99996H6.52005" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" style="color: #78e183"></path></svg>
+                                                    <div class="nav_text">
+                                                        list
+                                                    </div>
+                                                </div>
+                        
+                                                <div class="column_nav" style="display: flex; gap: 10px; align-items: center;">
+                                                    <svg width="12" height="12" viewBox="0 0 24 24" stroke-width="3" fill="none" xmlns="http://www.w3.org/2000/svg" color="currentColor"><path d="M6.00005 19L19 5.99996M19 5.99996V18.48M19 5.99996H6.52005" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" style="color: #78e183"></path></svg>
+                                                    <div class="nav_text">
+                                                        list
+                                                    </div>
+                                                </div>
+                        
+                                                <div class="column_nav" style="display: flex; gap: 10px; align-items: center;">
+                                                    <svg width="12" height="12" viewBox="0 0 24 24" stroke-width="3" fill="none" xmlns="http://www.w3.org/2000/svg" color="currentColor"><path d="M6.00005 19L19 5.99996M19 5.99996V18.48M19 5.99996H6.52005" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" style="color: #78e183"></path></svg>
+                                                    <div class="nav_text">
+                                                        list
+                                                    </div>
+                                                </div>
+                        
+                                                <div class="column_nav" style="display: flex; gap: 10px; align-items: center;">
+                                                    <svg width="12" height="12" viewBox="0 0 24 24" stroke-width="3" fill="none" xmlns="http://www.w3.org/2000/svg" color="currentColor"><path d="M6.00005 19L19 5.99996M19 5.99996V18.48M19 5.99996H6.52005" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" style="color: #78e183"></path></svg>
+                                                    <div class="nav_text">
+                                                        list
+                                                    </div>
+                                                </div>
+                        
+                                                <div class="column_nav" style="display: flex; gap: 10px; align-items: center;">
+                                                    <svg width="12" height="12" viewBox="0 0 24 24" stroke-width="3" fill="none" xmlns="http://www.w3.org/2000/svg" color="currentColor"><path d="M6.00005 19L19 5.99996M19 5.99996V18.48M19 5.99996H6.52005" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" style="color: #78e183"></path></svg>
+                                                    <div class="nav_text">
+                                                        list
+                                                    </div>
+                                                </div>
+                        
+                                                <div class="column_nav" style="display: flex; gap: 10px; align-items: center;">
+                                                    <svg width="12" height="12" viewBox="0 0 24 24" stroke-width="3" fill="none" xmlns="http://www.w3.org/2000/svg" color="currentColor"><path d="M6.00005 19L19 5.99996M19 5.99996V18.48M19 5.99996H6.52005" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" style="color: #78e183"></path></svg>
+                                                    <div class="nav_text">
+                                                        list
+                                                    </div>
+                                                </div>
+                        
+                                            </div>
+                                        </div>
+                        
+                                        <div class="column" style="box-sizing:border-box;">
+                                            <div class="column_heading" style=" text-transform: uppercase; letter-spacing: 1.2px; font-size: 12px; padding-bottom: 30px; font-weight: 600;">
+                                                category
+                                            </div>
+                        
+                                            <div class="column_list" style=" display: flex; flex-direction: column; gap: 30px;">
+                        
+                                                <div class="column_nav" style=" display: flex; gap: 10px; align-items: center;">
+                                                    <svg width="12" height="12" viewBox="0 0 24 24" stroke-width="3" fill="none" xmlns="http://www.w3.org/2000/svg" color="currentColor"><path d="M6.00005 19L19 5.99996M19 5.99996V18.48M19 5.99996H6.52005" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" style="color: #78e183"></path></svg>
+                                                    <div class="nav_text">
+                                                        list
+                                                    </div>
+                                                </div>
+                        
+                                                <div class="column_nav" style="display: flex; gap: 10px; align-items: center;">
+                                                    <svg width="12" height="12" viewBox="0 0 24 24" stroke-width="3" fill="none" xmlns="http://www.w3.org/2000/svg" color="currentColor"><path d="M6.00005 19L19 5.99996M19 5.99996V18.48M19 5.99996H6.52005" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" style="color: #78e183"></path></svg>
+                                                    <div class="nav_text">
+                                                        list
+                                                    </div>
+                                                </div>
+                        
+                                                <div class="column_nav" style="display: flex; gap: 10px; align-items: center;">
+                                                    <svg width="12" height="12" viewBox="0 0 24 24" stroke-width="3" fill="none" xmlns="http://www.w3.org/2000/svg" color="currentColor"><path d="M6.00005 19L19 5.99996M19 5.99996V18.48M19 5.99996H6.52005" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" style="color: #78e183"></path></svg>
+                                                    <div class="nav_text">
+                                                        list
+                                                    </div>
+                                                </div>
+                        
+                                                <div class="column_nav" style="display: flex; gap: 10px; align-items: center;">
+                                                    <svg width="12" height="12" viewBox="0 0 24 24" stroke-width="3" fill="none" xmlns="http://www.w3.org/2000/svg" color="currentColor"><path d="M6.00005 19L19 5.99996M19 5.99996V18.48M19 5.99996H6.52005" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" style="color: #78e183"></path></svg>
+                                                    <div class="nav_text">
+                                                        list
+                                                    </div>
+                                                </div>
+                        
+                                                <div class="column_nav" style="display: flex; gap: 10px; align-items: center;">
+                                                    <svg width="12" height="12" viewBox="0 0 24 24" stroke-width="3" fill="none" xmlns="http://www.w3.org/2000/svg" color="currentColor"><path d="M6.00005 19L19 5.99996M19 5.99996V18.48M19 5.99996H6.52005" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" style="color: #78e183"></path></svg>
+                                                    <div class="nav_text">
+                                                        list
+                                                    </div>
+                                                </div>
+                        
+                                                <div class="column_nav" style="display: flex; gap: 10px; align-items: center;">
+                                                    <svg width="12" height="12" viewBox="0 0 24 24" stroke-width="3" fill="none" xmlns="http://www.w3.org/2000/svg" color="currentColor"><path d="M6.00005 19L19 5.99996M19 5.99996V18.48M19 5.99996H6.52005" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" style="color: #78e183"></path></svg>
+                                                    <div class="nav_text">
+                                                        list
+                                                    </div>
+                                                </div>
+                        
+                                            </div>
+                                        </div>
+                        
+                                        <div class="column" style="box-sizing: border-box;">
+                                            <div class="column_heading" style=" text-transform: uppercase; letter-spacing: 1.2px; font-size: 12px; padding-bottom: 30px; font-weight: 600;">
+                                                category
+                                            </div>
+                        
+                                            <div class="column_list" style=" display: flex; flex-direction: column; gap: 30px;">
+                        
+                                                <div class="column_nav" style=" display: flex; gap: 10px; align-items: center;">
+                                                    <svg width="12" height="12" viewBox="0 0 24 24" stroke-width="3" fill="none" xmlns="http://www.w3.org/2000/svg" color="currentColor"><path d="M6.00005 19L19 5.99996M19 5.99996V18.48M19 5.99996H6.52005" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" style="color: #78e183"></path></svg>
+                                                    <div class="nav_text">
+                                                        list
+                                                    </div>
+                                                </div>
+                        
+                                                <div class="column_nav" style="display: flex; gap: 10px; align-items: center;">
+                                                    <svg width="12" height="12" viewBox="0 0 24 24" stroke-width="3" fill="none" xmlns="http://www.w3.org/2000/svg" color="currentColor"><path d="M6.00005 19L19 5.99996M19 5.99996V18.48M19 5.99996H6.52005" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" style="color: #78e183"></path></svg>
+                                                    <div class="nav_text">
+                                                        list
+                                                    </div>
+                                                </div>
+                        
+                                                <div class="column_nav" style="display: flex; gap: 10px; align-items: center;">
+                                                    <svg width="12" height="12" viewBox="0 0 24 24" stroke-width="3" fill="none" xmlns="http://www.w3.org/2000/svg" color="currentColor"><path d="M6.00005 19L19 5.99996M19 5.99996V18.48M19 5.99996H6.52005" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" style="color: #78e183"></path></svg>
+                                                    <div class="nav_text">
+                                                        list
+                                                    </div>
+                                                </div>
+                        
+                                                <div class="column_nav" style="display: flex; gap: 10px; align-items: center;">
+                                                    <svg width="12" height="12" viewBox="0 0 24 24" stroke-width="3" fill="none" xmlns="http://www.w3.org/2000/svg" color="currentColor"><path d="M6.00005 19L19 5.99996M19 5.99996V18.48M19 5.99996H6.52005" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" style="color: #78e183"></path></svg>
+                                                    <div class="nav_text">
+                                                        list
+                                                    </div>
+                                                </div>
+                        
+                                                <div class="column_nav" style="display: flex; gap: 10px; align-items: center;">
+                                                    <svg width="12" height="12" viewBox="0 0 24 24" stroke-width="3" fill="none" xmlns="http://www.w3.org/2000/svg" color="currentColor"><path d="M6.00005 19L19 5.99996M19 5.99996V18.48M19 5.99996H6.52005" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" style="color: #78e183"></path></svg>
+                                                    <div class="nav_text">
+                                                        list
+                                                    </div>
+                                                </div>
+                        
+                                                <div class="column_nav" style="display: flex; gap: 10px; align-items: center;">
+                                                    <svg width="12" height="12" viewBox="0 0 24 24" stroke-width="3" fill="none" xmlns="http://www.w3.org/2000/svg" color="currentColor"><path d="M6.00005 19L19 5.99996M19 5.99996V18.48M19 5.99996H6.52005" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" style="color: #78e183"></path></svg>
+                                                    <div class="nav_text">
+                                                        list
+                                                    </div>
+                                                </div>
+                        
+                                            </div>
+                                        </div>
+                        
+                                        <div class="column"  style="box-sizing: border-box;">
+                                            <div class="column_heading" style=" text-transform: uppercase; letter-spacing: 1.2px; font-size: 12px; padding-bottom: 30px; font-weight: 600;">
+                                                category
+                                            </div>
+                        
+                                            <div class="column_list" style=" display: flex; flex-direction: column; gap: 30px;">
+                        
+                                                <div class="column_nav" style=" display: flex; gap: 10px; align-items: center;">
+                                                    <svg width="12" height="12" viewBox="0 0 24 24" stroke-width="3" fill="none" xmlns="http://www.w3.org/2000/svg" color="currentColor"><path d="M6.00005 19L19 5.99996M19 5.99996V18.48M19 5.99996H6.52005" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" style="color: #78e183"></path></svg>
+                                                    <div class="nav_text">
+                                                        list
+                                                    </div>
+                                                </div>
+                        
+                                                <div class="column_nav" style="display: flex; gap: 10px; align-items: center;">
+                                                    <svg width="12" height="12" viewBox="0 0 24 24" stroke-width="3" fill="none" xmlns="http://www.w3.org/2000/svg" color="currentColor"><path d="M6.00005 19L19 5.99996M19 5.99996V18.48M19 5.99996H6.52005" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" style="color: #78e183"></path></svg>
+                                                    <div class="nav_text">
+                                                        list
+                                                    </div>
+                                                </div>
+                        
+                                                <div class="column_nav" style="display: flex; gap: 10px; align-items: center;">
+                                                    <svg width="12" height="12" viewBox="0 0 24 24" stroke-width="3" fill="none" xmlns="http://www.w3.org/2000/svg" color="currentColor"><path d="M6.00005 19L19 5.99996M19 5.99996V18.48M19 5.99996H6.52005" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" style="color: #78e183"></path></svg>
+                                                    <div class="nav_text">
+                                                        list
+                                                    </div>
+                                                </div>
+                        
+                                                <div class="column_nav" style="display: flex; gap: 10px; align-items: center;">
+                                                    <svg width="12" height="12" viewBox="0 0 24 24" stroke-width="3" fill="none" xmlns="http://www.w3.org/2000/svg" color="currentColor"><path d="M6.00005 19L19 5.99996M19 5.99996V18.48M19 5.99996H6.52005" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" style="color: #78e183"></path></svg>
+                                                    <div class="nav_text">
+                                                        list
+                                                    </div>
+                                                </div>
+                        
+                                                <div class="column_nav" style="display: flex; gap: 10px; align-items: center;">
+                                                    <svg width="12" height="12" viewBox="0 0 24 24" stroke-width="3" fill="none" xmlns="http://www.w3.org/2000/svg" color="currentColor"><path d="M6.00005 19L19 5.99996M19 5.99996V18.48M19 5.99996H6.52005" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" style="color: #78e183"></path></svg>
+                                                    <div class="nav_text">
+                                                        list
+                                                    </div>
+                                                </div>
+                        
+                                                <div class="column_nav" style="display: flex; gap: 10px; align-items: center;">
+                                                    <svg width="12" height="12" viewBox="0 0 24 24" stroke-width="3" fill="none" xmlns="http://www.w3.org/2000/svg" color="currentColor"><path d="M6.00005 19L19 5.99996M19 5.99996V18.48M19 5.99996H6.52005" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" style="color: #78e183"></path></svg>
+                                                    <div class="nav_text">
+                                                        list
+                                                    </div>
+                                                </div>
+                        
+                                            </div>
+                                        </div>
+                        
+                                        <div class="column"  style="box-sizing: border-box;">
+                                            <div class="column_heading" style=" text-transform: uppercase; letter-spacing: 1.2px; font-size: 12px; padding-bottom: 30px; font-weight: 600;">
+                                                category
+                                            </div>
+                        
+                                            <div class="column_list" style=" display: flex; flex-direction: column; gap: 30px;">
+                        
+                                                <div class="column_nav" style=" display: flex; gap: 10px; align-items: center;">
+                                                    <svg width="12" height="12" viewBox="0 0 24 24" stroke-width="3" fill="none" xmlns="http://www.w3.org/2000/svg" color="currentColor"><path d="M6.00005 19L19 5.99996M19 5.99996V18.48M19 5.99996H6.52005" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" style="color: #78e183"></path></svg>
+                                                    <div class="nav_text">
+                                                        list
+                                                    </div>
+                                                </div>
+                        
+                                                <div class="column_nav" style="display: flex; gap: 10px; align-items: center;">
+                                                    <svg width="12" height="12" viewBox="0 0 24 24" stroke-width="3" fill="none" xmlns="http://www.w3.org/2000/svg" color="currentColor"><path d="M6.00005 19L19 5.99996M19 5.99996V18.48M19 5.99996H6.52005" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" style="color: #78e183"></path></svg>
+                                                    <div class="nav_text">
+                                                        list
+                                                    </div>
+                                                </div>
+                        
+                                                <div class="column_nav" style="display: flex; gap: 10px; align-items: center;">
+                                                    <svg width="12" height="12" viewBox="0 0 24 24" stroke-width="3" fill="none" xmlns="http://www.w3.org/2000/svg" color="currentColor"><path d="M6.00005 19L19 5.99996M19 5.99996V18.48M19 5.99996H6.52005" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" style="color: #78e183"></path></svg>
+                                                    <div class="nav_text">
+                                                        list
+                                                    </div>
+                                                </div>
+                        
+                                                <div class="column_nav" style="display: flex; gap: 10px; align-items: center;">
+                                                    <svg width="12" height="12" viewBox="0 0 24 24" stroke-width="3" fill="none" xmlns="http://www.w3.org/2000/svg" color="currentColor"><path d="M6.00005 19L19 5.99996M19 5.99996V18.48M19 5.99996H6.52005" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" style="color: #78e183"></path></svg>
+                                                    <div class="nav_text">
+                                                        list
+                                                    </div>
+                                                </div>
+                        
+                                                <div class="column_nav" style="display: flex; gap: 10px; align-items: center;">
+                                                    <svg width="12" height="12" viewBox="0 0 24 24" stroke-width="3" fill="none" xmlns="http://www.w3.org/2000/svg" color="currentColor"><path d="M6.00005 19L19 5.99996M19 5.99996V18.48M19 5.99996H6.52005" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" style="color: #78e183"></path></svg>
+                                                    <div class="nav_text">
+                                                        list
+                                                    </div>
+                                                </div>
+                        
+                                                <div class="column_nav" style="display: flex; gap: 10px; align-items: center;">
+                                                    <svg width="12" height="12" viewBox="0 0 24 24" stroke-width="3" fill="none" xmlns="http://www.w3.org/2000/svg" color="currentColor"><path d="M6.00005 19L19 5.99996M19 5.99996V18.48M19 5.99996H6.52005" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" style="color: #78e183"></path></svg>
+                                                    <div class="nav_text">
+                                                        list
+                                                    </div>
+                                                </div>
+                        
+                                            </div>
+                                        </div>
+                               </div>
+                        
+                                <div class="footer_copyinfo" style="border-top: .7px solid #515050; display: flex; justify-content: space-between; padding: 45px 0; ">
+                                    <div class="copyright" style="text-transform: uppercase; font-size: 11px; letter-spacing: 2px; font-weight: 500;">
+                                        © Copyright 2024, All Rights Reserved  |   Lagos State Government
+                                    </div>
+                        
+                                    <div class="powered_by" style="text-transform: uppercase; font-size: 11px; letter-spacing: 2px; font-weight: 500;">
+                                      <span style="color: #78e183;">  Powered by -</span> Lagos State Ministry of Innovation, Science and Technology
+                                    </div>
+                        
+                                </div>
+                            </div>
+                        </footer>
+
+                        <p class="fst-italic fs-2">Source-code</p>
+
+                        <pre>
+                            <code  class="language-html" style="box-sizing: content-box; word-wrap: break-word;">
+                                        &lt;footer style=&quot;background-color:#131414; margin: 0; padding: 0; color: #fffcf1;&quot; &gt;
+                                        &lt;div class=&quot;footer_body&quot;  style=&quot;padding: 0 110px;&quot;&gt;
+                                    
+                                            &lt;div class=&quot;footer_header&quot; style=&quot;padding-top: 60px; margin-bottom: 60px ; display: flex; justify-content: space-between; align-items: center;&quot;&gt;
+                                    
+                                                &lt;div class=&quot;greetings&quot; style=&quot;display: flex; gap: 10px; align-items: center;&quot;&gt;
+                                    
+                                                    &lt;div class=&quot;header_content&quot; style=&quot;font-size: 60px; font-weight: 700;letter-spacing: -3px;&quot;&gt;
+                                                        Lagos,&lt;span style=&quot;color: #78e183;&quot;&gt;good morning &lt;/span&gt;
+                                                    &lt;/div&gt;
+                                        
+                                                    &lt;div class=&quot;day_nighticon&quot; style=&quot;width: 55px;&quot;&gt;
+                                                        &lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; enable-background=&quot;new 0 0 512 512&quot; viewBox=&quot;0 0 512 512&quot; id=&quot;sun&quot;&gt;
+                                                            &lt;g&gt;
+                                                            &lt;circle cx=&quot;255.9&quot; cy=&quot;256&quot; r=&quot;124.4&quot; fill=&quot;#fed402&quot;&gt;&lt;/circle&gt;
+                                                            &lt;path fill=&quot;#efc514&quot; d=&quot;M293.3,137.3c23,22.6,37.3,54,37.3,88.8c0,68.7-55.7,124.4-124.4,124.4c-13,0-25.5-2-37.3-5.7
+                                                                c22.4,22,53.1,35.5,87,35.5c68.7,0,124.4-55.7,124.4-124.4C380.4,200.3,343.7,153.1,293.3,137.3z&quot;&gt;&lt;/path&gt;
+                                                            &lt;path fill=&quot;#fedf30&quot; d=&quot;M255.9 95.3c13.2 0 26.1 1.6 38.4 4.6 6.5 1.6 11.9-5.1 9.1-11.1L263.3 4.5c-2.9-6-11.5-6-14.4 0l-40.2 84.3c-2.9 6 2.5 12.7 9.1 11.1C229.8 96.9 242.7 95.3 255.9 95.3zM255.9 416.7c-13.2 0-26.1-1.6-38.4-4.6-6.5-1.6-11.9 5.1-9.1 11.1l40.2 84.3c2.9 6 11.5 6 14.4 0l40.2-84.3c2.9-6-2.5-12.7-9.1-11.1C282.1 415.1 269.2 416.7 255.9 416.7zM507.5 248.8l-84.3-40.2c-6-2.9-12.7 2.5-11.1 9.1 3 12.3 4.6 25.1 4.6 38.4 0 13.3-1.6 26.1-4.6 38.4-1.6 6.5 5.1 11.9 11.1 9.1l84.3-40.2C513.5 260.3 513.5 251.7 507.5 248.8zM95.3 256c0-13.2 1.6-26.1 4.6-38.4 1.6-6.5-5.1-11.9-11.1-9.1L4.5 248.7c-6 2.9-6 11.5 0 14.4l84.3 40.2c6 2.9 12.7-2.5 11.1-9.1C96.9 282.1 95.3 269.2 95.3 256z&quot;&gt;&lt;/path&gt;
+                                                            &lt;path fill=&quot;#fed402&quot; d=&quot;M171.3 104.2L83.2 73c-6.3-2.2-12.4 3.8-10.2 10.2l31.2 88.1c2.2 6.3 10.8 7.2 14.3 1.5 13.4-22.2 32.1-40.9 54.3-54.3C178.5 115 177.6 106.4 171.3 104.2zM393.4 339.1c-13.4 22.2-32.1 40.9-54.3 54.3-5.7 3.5-4.8 12 1.5 14.3l88.1 31.2c6.3 2.2 12.4-3.8 10.2-10.2l-31.2-88.1C405.5 334.3 396.9 333.4 393.4 339.1zM339.1 118.4c22.2 13.4 40.9 32.1 54.3 54.3 3.5 5.7 12 4.8 14.3-1.5l31.2-88.1c2.2-6.3-3.8-12.4-10.2-10.2l-88.1 31.2C334.3 106.4 333.4 115 339.1 118.4zM104.2 340.6L73 428.8c-2.2 6.3 3.8 12.4 10.2 10.2l88.1-31.2c6.3-2.2 7.2-10.8 1.5-14.3-22.2-13.4-40.9-32.1-54.3-54.3C115 333.4 106.4 334.3 104.2 340.6z&quot;&gt;&lt;/path&gt;
+                                                            &lt;/g&gt;
+                                                        &lt;/svg&gt;
+                                                    &lt;/div&gt;
+                                    
+                                                &lt;/div&gt;
+                                    
+                                                &lt;div class=&quot;socialmedia_iconlinks&quot; style=&quot;display: flex; gap: 30px; align-items: center;&quot;&gt;
+                                    
+                                                    &lt;div class=&quot;social_icon&quot; style=&quot;width: 20px;&quot;&gt;
+                                                        &lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; xml:space=&quot;preserve&quot; viewBox=&quot;0 0 16 16&quot; id=&quot;Instagram&quot;&gt;
+                                                            &lt;path d=&quot;M11 0H5a5 5 0 0 0-5 5v6a5 5 0 0 0 5 5h6a5 5 0 0 0 5-5V5a5 5 0 0 0-5-5zm3.5 11c0 1.93-1.57 3.5-3.5 3.5H5c-1.93 0-3.5-1.57-3.5-3.5V5c0-1.93 1.57-3.5 3.5-3.5h6c1.93 0 3.5 1.57 3.5 3.5v6z&quot; fill=&quot;#ffffff&quot; class=&quot;color000000 svgShape&quot;&gt;&lt;/path&gt;
+                                                            &lt;path d=&quot;M8 4a4 4 0 1 0 0 8 4 4 0 0 0 0-8zm0 6.5A2.503 2.503 0 0 1 5.5 8c0-1.379 1.122-2.5 2.5-2.5s2.5 1.121 2.5 2.5c0 1.378-1.122 2.5-2.5 2.5z&quot; fill=&quot;#ffffff&quot; class=&quot;color000000 svgShape&quot;&gt;&lt;/path&gt;
+                                                            &lt;circle cx=&quot;12.3&quot; cy=&quot;3.7&quot; r=&quot;.533&quot; fill=&quot;#ffffff&quot; class=&quot;color000000 svgShape&quot;&gt;&lt;/circle&gt;
+                                                        &lt;/svg&gt;
+                                                    &lt;/div&gt;
+                                    
+                                                    &lt;div class=&quot;social_icon&quot; style=&quot;width: 20px;&quot;&gt;
+                                                        &lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; xml:space=&quot;preserve&quot; viewBox=&quot;0 0 100 100&quot; id=&quot;Linkedin&quot;&gt;
+                                                            &lt;path d=&quot;M87.877 5.608H11.174c-3.673 0-6.65 2.886-6.65 6.448v77.101c0 3.562 2.978 6.451 6.65 6.451h76.703c3.673 0 6.646-2.89 6.646-6.451V12.056c0-3.561-2.973-6.448-6.646-6.448zM31.809 80.944H18.211V40.31h13.598v40.634zm-6.798-46.185h-.091c-4.56 0-7.516-3.119-7.516-7.023 0-3.983 3.043-7.017 7.693-7.017 4.651 0 7.512 3.033 7.602 7.017 0 3.905-2.95 7.023-7.688 7.023zm55.816 46.185H67.233v-21.74c0-5.464-1.97-9.191-6.886-9.191-3.761 0-5.993 2.515-6.973 4.942-.364.868-.453 2.08-.453 3.292v22.696H39.329s.178-36.823 0-40.634h13.593v5.761c1.805-2.768 5.029-6.717 12.249-6.717 8.947 0 15.656 5.804 15.656 18.291v23.3zM52.834 46.199c.024-.038.056-.084.088-.128v.128h-.088z&quot; fill=&quot;#ffffff&quot; class=&quot;color000000 svgShape&quot;&gt;&lt;/path&gt;
+                                                        &lt;/svg&gt;
+                                                    &lt;/div&gt;
+                                    
+                                                    &lt;div class=&quot;social_icon&quot; style=&quot;width: 20px;&quot;&gt;
+                                                        &lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; xml:space=&quot;preserve&quot; viewBox=&quot;0 0 16 16&quot; id=&quot;Facebook&quot;&gt;
+                                                            &lt;path fill=&quot;none&quot; stroke=&quot;#ffffff&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; stroke-miterlimit=&quot;10&quot; d=&quot;M7.5 15.5H2c-.83 0-1.5-.67-1.5-1.5V2C.5 1.17 1.17.5 2 .5h12c.83 0 1.5.67 1.5 1.5v12c0 .83-.67 1.5-1.5 1.5h-3.5V10H12l1-2.5h-2.5v-2c0-.55.45-.5 1-.5h1V2.5h-2c-.83 0-1.58.34-2.12.88S7.5 4.67 7.5 5.5v2h-2V10h2v5.5z&quot; clip-rule=&quot;evenodd&quot; class=&quot;colorStroke000000 svgStroke&quot;&gt;&lt;/path&gt;
+                                                        &lt;/svg&gt;
+                                                    &lt;/div&gt;
+                                    
+                                                    &lt;div class=&quot;social_icon&quot; style=&quot;width: 25px;&quot;&gt;
+                                                        &lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 64 64&quot; id=&quot;Twitter&quot;&gt;
+                                                            &lt;path fill=&quot;#050505&quot; fill-rule=&quot;evenodd&quot; d=&quot;m60,12c0-4.42-3.58-8-8-8H12C7.58,4,4,7.58,4,12v40c0,4.42,3.58,8,8,8h40c4.42,0,8-3.58,8-8V12h0Z&quot; class=&quot;color050505 svgShape&quot;&gt;&lt;/path&gt;
+                                                            &lt;path fill=&quot;#ffffff&quot; d=&quot;m15.07,48.28h4l10.68-12.14,9.29,12.12h10.86l-14.25-18.84,12.06-13.7h-4l-9.91,11.26-8.5-11.25h-11.21l13.79,17.99-12.82,14.57Zm5.11-29.56h3.64l20.06,26.54h-3.35l-20.34-26.54Z&quot; class=&quot;colorffffff svgShape&quot;&gt;&lt;/path&gt;
+                                                        &lt;/svg&gt;
+                                                    &lt;/div&gt;
+                                    
+                                                    &lt;div class=&quot;social_icon&quot; style=&quot;width: 23px;&quot;&gt;
+                                                        &lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 24 24&quot; id=&quot;youtube&quot;&gt;
+                                                            &lt;path d=&quot;M23,9.71a8.5,8.5,0,0,0-.91-4.13,2.92,2.92,0,0,0-1.72-1A78.36,78.36,0,0,0,12,4.27a78.45,78.45,0,0,0-8.34.3,2.87,2.87,0,0,0-1.46.74c-.9.83-1,2.25-1.1,3.45a48.29,48.29,0,0,0,0,6.48,9.55,9.55,0,0,0,.3,2,3.14,3.14,0,0,0,.71,1.36,2.86,2.86,0,0,0,1.49.78,45.18,45.18,0,0,0,6.5.33c3.5.05,6.57,0,10.2-.28a2.88,2.88,0,0,0,1.53-.78,2.49,2.49,0,0,0,.61-1,10.58,10.58,0,0,0,.52-3.4C23,13.69,23,10.31,23,9.71ZM9.74,14.85V8.66l5.92,3.11C14,12.69,11.81,13.73,9.74,14.85Z&quot; fill=&quot;#ffffff&quot; class=&quot;color000000 svgShape&quot;&gt;&lt;/path&gt;
+                                                        &lt;/svg&gt;
+                                                    &lt;/div&gt;
+                                                    
+                                    
+                                                &lt;/div&gt;
+                                    
+                                            &lt;/div&gt;
+                                    
+                                        &lt;div class=&quot;flex_category&quot;  style=&quot;display: flex; gap: 90px;margin-bottom: 60px;&quot;&gt;
+                                                    &lt;div class=&quot;column &quot;  style=&quot;box-sizing: border-box;&quot;&gt;
+                                                        &lt;div class=&quot;column_heading&quot; style=&quot; text-transform: uppercase; letter-spacing: 1.2px; font-size: 12px; padding-bottom: 30px; font-weight: 600;&quot;&gt;
+                                                            category
+                                                        &lt;/div&gt;
+                                    
+                                                        &lt;div class=&quot;column_list&quot; style=&quot; display: flex; flex-direction: column; gap: 30px;&quot;&gt;
+                                    
+                                                            &lt;div class=&quot;column_nav&quot; style=&quot; display: flex; gap: 10px; align-items: center;&quot;&gt;
+                                                                &lt;svg width=&quot;12&quot; height=&quot;12&quot; viewBox=&quot;0 0 24 24&quot; stroke-width=&quot;3&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; color=&quot;currentColor&quot;&gt;&lt;path d=&quot;M6.00005 19L19 5.99996M19 5.99996V18.48M19 5.99996H6.52005&quot; stroke=&quot;currentColor&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; style=&quot;color: #78e183&quot;&gt;&lt;/path&gt;&lt;/svg&gt;
+                                                                &lt;div class=&quot;nav_text&quot;&gt;
+                                                                    list
+                                                                &lt;/div&gt;
+                                                            &lt;/div&gt;
+                                    
+                                                            &lt;div class=&quot;column_nav&quot; style=&quot;display: flex; gap: 10px; align-items: center;&quot;&gt;
+                                                                &lt;svg width=&quot;12&quot; height=&quot;12&quot; viewBox=&quot;0 0 24 24&quot; stroke-width=&quot;3&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; color=&quot;currentColor&quot;&gt;&lt;path d=&quot;M6.00005 19L19 5.99996M19 5.99996V18.48M19 5.99996H6.52005&quot; stroke=&quot;currentColor&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; style=&quot;color: #78e183&quot;&gt;&lt;/path&gt;&lt;/svg&gt;
+                                                                &lt;div class=&quot;nav_text&quot;&gt;
+                                                                    list
+                                                                &lt;/div&gt;
+                                                            &lt;/div&gt;
+                                    
+                                                            &lt;div class=&quot;column_nav&quot; style=&quot;display: flex; gap: 10px; align-items: center;&quot;&gt;
+                                                                &lt;svg width=&quot;12&quot; height=&quot;12&quot; viewBox=&quot;0 0 24 24&quot; stroke-width=&quot;3&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; color=&quot;currentColor&quot;&gt;&lt;path d=&quot;M6.00005 19L19 5.99996M19 5.99996V18.48M19 5.99996H6.52005&quot; stroke=&quot;currentColor&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; style=&quot;color: #78e183&quot;&gt;&lt;/path&gt;&lt;/svg&gt;
+                                                                &lt;div class=&quot;nav_text&quot;&gt;
+                                                                    list
+                                                                &lt;/div&gt;
+                                                            &lt;/div&gt;
+                                    
+                                                            &lt;div class=&quot;column_nav&quot; style=&quot;display: flex; gap: 10px; align-items: center;&quot;&gt;
+                                                                &lt;svg width=&quot;12&quot; height=&quot;12&quot; viewBox=&quot;0 0 24 24&quot; stroke-width=&quot;3&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; color=&quot;currentColor&quot;&gt;&lt;path d=&quot;M6.00005 19L19 5.99996M19 5.99996V18.48M19 5.99996H6.52005&quot; stroke=&quot;currentColor&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; style=&quot;color: #78e183&quot;&gt;&lt;/path&gt;&lt;/svg&gt;
+                                                                &lt;div class=&quot;nav_text&quot;&gt;
+                                                                    list
+                                                                &lt;/div&gt;
+                                                            &lt;/div&gt;
+                                    
+                                                            &lt;div class=&quot;column_nav&quot; style=&quot;display: flex; gap: 10px; align-items: center;&quot;&gt;
+                                                                &lt;svg width=&quot;12&quot; height=&quot;12&quot; viewBox=&quot;0 0 24 24&quot; stroke-width=&quot;3&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; color=&quot;currentColor&quot;&gt;&lt;path d=&quot;M6.00005 19L19 5.99996M19 5.99996V18.48M19 5.99996H6.52005&quot; stroke=&quot;currentColor&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; style=&quot;color: #78e183&quot;&gt;&lt;/path&gt;&lt;/svg&gt;
+                                                                &lt;div class=&quot;nav_text&quot;&gt;
+                                                                    list
+                                                                &lt;/div&gt;
+                                                            &lt;/div&gt;
+                                    
+                                                            &lt;div class=&quot;column_nav&quot; style=&quot;display: flex; gap: 10px; align-items: center;&quot;&gt;
+                                                                &lt;svg width=&quot;12&quot; height=&quot;12&quot; viewBox=&quot;0 0 24 24&quot; stroke-width=&quot;3&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; color=&quot;currentColor&quot;&gt;&lt;path d=&quot;M6.00005 19L19 5.99996M19 5.99996V18.48M19 5.99996H6.52005&quot; stroke=&quot;currentColor&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; style=&quot;color: #78e183&quot;&gt;&lt;/path&gt;&lt;/svg&gt;
+                                                                &lt;div class=&quot;nav_text&quot;&gt;
+                                                                    list
+                                                                &lt;/div&gt;
+                                                            &lt;/div&gt;
+                                    
+                                                        &lt;/div&gt;
+                                                    &lt;/div&gt;
+                                    
+                                                    &lt;div class=&quot;column&quot; style=&quot;box-sizing:border-box;&quot;&gt;
+                                                        &lt;div class=&quot;column_heading&quot; style=&quot; text-transform: uppercase; letter-spacing: 1.2px; font-size: 12px; padding-bottom: 30px; font-weight: 600;&quot;&gt;
+                                                            category
+                                                        &lt;/div&gt;
+                                    
+                                                        &lt;div class=&quot;column_list&quot; style=&quot; display: flex; flex-direction: column; gap: 30px;&quot;&gt;
+                                    
+                                                            &lt;div class=&quot;column_nav&quot; style=&quot; display: flex; gap: 10px; align-items: center;&quot;&gt;
+                                                                &lt;svg width=&quot;12&quot; height=&quot;12&quot; viewBox=&quot;0 0 24 24&quot; stroke-width=&quot;3&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; color=&quot;currentColor&quot;&gt;&lt;path d=&quot;M6.00005 19L19 5.99996M19 5.99996V18.48M19 5.99996H6.52005&quot; stroke=&quot;currentColor&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; style=&quot;color: #78e183&quot;&gt;&lt;/path&gt;&lt;/svg&gt;
+                                                                &lt;div class=&quot;nav_text&quot;&gt;
+                                                                    list
+                                                                &lt;/div&gt;
+                                                            &lt;/div&gt;
+                                    
+                                                            &lt;div class=&quot;column_nav&quot; style=&quot;display: flex; gap: 10px; align-items: center;&quot;&gt;
+                                                                &lt;svg width=&quot;12&quot; height=&quot;12&quot; viewBox=&quot;0 0 24 24&quot; stroke-width=&quot;3&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; color=&quot;currentColor&quot;&gt;&lt;path d=&quot;M6.00005 19L19 5.99996M19 5.99996V18.48M19 5.99996H6.52005&quot; stroke=&quot;currentColor&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; style=&quot;color: #78e183&quot;&gt;&lt;/path&gt;&lt;/svg&gt;
+                                                                &lt;div class=&quot;nav_text&quot;&gt;
+                                                                    list
+                                                                &lt;/div&gt;
+                                                            &lt;/div&gt;
+                                    
+                                                            &lt;div class=&quot;column_nav&quot; style=&quot;display: flex; gap: 10px; align-items: center;&quot;&gt;
+                                                                &lt;svg width=&quot;12&quot; height=&quot;12&quot; viewBox=&quot;0 0 24 24&quot; stroke-width=&quot;3&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; color=&quot;currentColor&quot;&gt;&lt;path d=&quot;M6.00005 19L19 5.99996M19 5.99996V18.48M19 5.99996H6.52005&quot; stroke=&quot;currentColor&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; style=&quot;color: #78e183&quot;&gt;&lt;/path&gt;&lt;/svg&gt;
+                                                                &lt;div class=&quot;nav_text&quot;&gt;
+                                                                    list
+                                                                &lt;/div&gt;
+                                                            &lt;/div&gt;
+                                    
+                                                            &lt;div class=&quot;column_nav&quot; style=&quot;display: flex; gap: 10px; align-items: center;&quot;&gt;
+                                                                &lt;svg width=&quot;12&quot; height=&quot;12&quot; viewBox=&quot;0 0 24 24&quot; stroke-width=&quot;3&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; color=&quot;currentColor&quot;&gt;&lt;path d=&quot;M6.00005 19L19 5.99996M19 5.99996V18.48M19 5.99996H6.52005&quot; stroke=&quot;currentColor&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; style=&quot;color: #78e183&quot;&gt;&lt;/path&gt;&lt;/svg&gt;
+                                                                &lt;div class=&quot;nav_text&quot;&gt;
+                                                                    list
+                                                                &lt;/div&gt;
+                                                            &lt;/div&gt;
+                                    
+                                                            &lt;div class=&quot;column_nav&quot; style=&quot;display: flex; gap: 10px; align-items: center;&quot;&gt;
+                                                                &lt;svg width=&quot;12&quot; height=&quot;12&quot; viewBox=&quot;0 0 24 24&quot; stroke-width=&quot;3&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; color=&quot;currentColor&quot;&gt;&lt;path d=&quot;M6.00005 19L19 5.99996M19 5.99996V18.48M19 5.99996H6.52005&quot; stroke=&quot;currentColor&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; style=&quot;color: #78e183&quot;&gt;&lt;/path&gt;&lt;/svg&gt;
+                                                                &lt;div class=&quot;nav_text&quot;&gt;
+                                                                    list
+                                                                &lt;/div&gt;
+                                                            &lt;/div&gt;
+                                    
+                                                            &lt;div class=&quot;column_nav&quot; style=&quot;display: flex; gap: 10px; align-items: center;&quot;&gt;
+                                                                &lt;svg width=&quot;12&quot; height=&quot;12&quot; viewBox=&quot;0 0 24 24&quot; stroke-width=&quot;3&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; color=&quot;currentColor&quot;&gt;&lt;path d=&quot;M6.00005 19L19 5.99996M19 5.99996V18.48M19 5.99996H6.52005&quot; stroke=&quot;currentColor&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; style=&quot;color: #78e183&quot;&gt;&lt;/path&gt;&lt;/svg&gt;
+                                                                &lt;div class=&quot;nav_text&quot;&gt;
+                                                                    list
+                                                                &lt;/div&gt;
+                                                            &lt;/div&gt;
+                                    
+                                                        &lt;/div&gt;
+                                                    &lt;/div&gt;
+                                    
+                                                    &lt;div class=&quot;column&quot; style=&quot;box-sizing: border-box;&quot;&gt;
+                                                        &lt;div class=&quot;column_heading&quot; style=&quot; text-transform: uppercase; letter-spacing: 1.2px; font-size: 12px; padding-bottom: 30px; font-weight: 600;&quot;&gt;
+                                                            category
+                                                        &lt;/div&gt;
+                                    
+                                                        &lt;div class=&quot;column_list&quot; style=&quot; display: flex; flex-direction: column; gap: 30px;&quot;&gt;
+                                    
+                                                            &lt;div class=&quot;column_nav&quot; style=&quot; display: flex; gap: 10px; align-items: center;&quot;&gt;
+                                                                &lt;svg width=&quot;12&quot; height=&quot;12&quot; viewBox=&quot;0 0 24 24&quot; stroke-width=&quot;3&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; color=&quot;currentColor&quot;&gt;&lt;path d=&quot;M6.00005 19L19 5.99996M19 5.99996V18.48M19 5.99996H6.52005&quot; stroke=&quot;currentColor&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; style=&quot;color: #78e183&quot;&gt;&lt;/path&gt;&lt;/svg&gt;
+                                                                &lt;div class=&quot;nav_text&quot;&gt;
+                                                                    list
+                                                                &lt;/div&gt;
+                                                            &lt;/div&gt;
+                                    
+                                                            &lt;div class=&quot;column_nav&quot; style=&quot;display: flex; gap: 10px; align-items: center;&quot;&gt;
+                                                                &lt;svg width=&quot;12&quot; height=&quot;12&quot; viewBox=&quot;0 0 24 24&quot; stroke-width=&quot;3&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; color=&quot;currentColor&quot;&gt;&lt;path d=&quot;M6.00005 19L19 5.99996M19 5.99996V18.48M19 5.99996H6.52005&quot; stroke=&quot;currentColor&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; style=&quot;color: #78e183&quot;&gt;&lt;/path&gt;&lt;/svg&gt;
+                                                                &lt;div class=&quot;nav_text&quot;&gt;
+                                                                    list
+                                                                &lt;/div&gt;
+                                                            &lt;/div&gt;
+                                    
+                                                            &lt;div class=&quot;column_nav&quot; style=&quot;display: flex; gap: 10px; align-items: center;&quot;&gt;
+                                                                &lt;svg width=&quot;12&quot; height=&quot;12&quot; viewBox=&quot;0 0 24 24&quot; stroke-width=&quot;3&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; color=&quot;currentColor&quot;&gt;&lt;path d=&quot;M6.00005 19L19 5.99996M19 5.99996V18.48M19 5.99996H6.52005&quot; stroke=&quot;currentColor&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; style=&quot;color: #78e183&quot;&gt;&lt;/path&gt;&lt;/svg&gt;
+                                                                &lt;div class=&quot;nav_text&quot;&gt;
+                                                                    list
+                                                                &lt;/div&gt;
+                                                            &lt;/div&gt;
+                                    
+                                                            &lt;div class=&quot;column_nav&quot; style=&quot;display: flex; gap: 10px; align-items: center;&quot;&gt;
+                                                                &lt;svg width=&quot;12&quot; height=&quot;12&quot; viewBox=&quot;0 0 24 24&quot; stroke-width=&quot;3&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; color=&quot;currentColor&quot;&gt;&lt;path d=&quot;M6.00005 19L19 5.99996M19 5.99996V18.48M19 5.99996H6.52005&quot; stroke=&quot;currentColor&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; style=&quot;color: #78e183&quot;&gt;&lt;/path&gt;&lt;/svg&gt;
+                                                                &lt;div class=&quot;nav_text&quot;&gt;
+                                                                    list
+                                                                &lt;/div&gt;
+                                                            &lt;/div&gt;
+                                    
+                                                            &lt;div class=&quot;column_nav&quot; style=&quot;display: flex; gap: 10px; align-items: center;&quot;&gt;
+                                                                &lt;svg width=&quot;12&quot; height=&quot;12&quot; viewBox=&quot;0 0 24 24&quot; stroke-width=&quot;3&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; color=&quot;currentColor&quot;&gt;&lt;path d=&quot;M6.00005 19L19 5.99996M19 5.99996V18.48M19 5.99996H6.52005&quot; stroke=&quot;currentColor&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; style=&quot;color: #78e183&quot;&gt;&lt;/path&gt;&lt;/svg&gt;
+                                                                &lt;div class=&quot;nav_text&quot;&gt;
+                                                                    list
+                                                                &lt;/div&gt;
+                                                            &lt;/div&gt;
+                                    
+                                                            &lt;div class=&quot;column_nav&quot; style=&quot;display: flex; gap: 10px; align-items: center;&quot;&gt;
+                                                                &lt;svg width=&quot;12&quot; height=&quot;12&quot; viewBox=&quot;0 0 24 24&quot; stroke-width=&quot;3&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; color=&quot;currentColor&quot;&gt;&lt;path d=&quot;M6.00005 19L19 5.99996M19 5.99996V18.48M19 5.99996H6.52005&quot; stroke=&quot;currentColor&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; style=&quot;color: #78e183&quot;&gt;&lt;/path&gt;&lt;/svg&gt;
+                                                                &lt;div class=&quot;nav_text&quot;&gt;
+                                                                    list
+                                                                &lt;/div&gt;
+                                                            &lt;/div&gt;
+                                    
+                                                        &lt;/div&gt;
+                                                    &lt;/div&gt;
+                                    
+                                                    &lt;div class=&quot;column&quot;  style=&quot;box-sizing: border-box;&quot;&gt;
+                                                        &lt;div class=&quot;column_heading&quot; style=&quot; text-transform: uppercase; letter-spacing: 1.2px; font-size: 12px; padding-bottom: 30px; font-weight: 600;&quot;&gt;
+                                                            category
+                                                        &lt;/div&gt;
+                                    
+                                                        &lt;div class=&quot;column_list&quot; style=&quot; display: flex; flex-direction: column; gap: 30px;&quot;&gt;
+                                    
+                                                            &lt;div class=&quot;column_nav&quot; style=&quot; display: flex; gap: 10px; align-items: center;&quot;&gt;
+                                                                &lt;svg width=&quot;12&quot; height=&quot;12&quot; viewBox=&quot;0 0 24 24&quot; stroke-width=&quot;3&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; color=&quot;currentColor&quot;&gt;&lt;path d=&quot;M6.00005 19L19 5.99996M19 5.99996V18.48M19 5.99996H6.52005&quot; stroke=&quot;currentColor&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; style=&quot;color: #78e183&quot;&gt;&lt;/path&gt;&lt;/svg&gt;
+                                                                &lt;div class=&quot;nav_text&quot;&gt;
+                                                                    list
+                                                                &lt;/div&gt;
+                                                            &lt;/div&gt;
+                                    
+                                                            &lt;div class=&quot;column_nav&quot; style=&quot;display: flex; gap: 10px; align-items: center;&quot;&gt;
+                                                                &lt;svg width=&quot;12&quot; height=&quot;12&quot; viewBox=&quot;0 0 24 24&quot; stroke-width=&quot;3&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; color=&quot;currentColor&quot;&gt;&lt;path d=&quot;M6.00005 19L19 5.99996M19 5.99996V18.48M19 5.99996H6.52005&quot; stroke=&quot;currentColor&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; style=&quot;color: #78e183&quot;&gt;&lt;/path&gt;&lt;/svg&gt;
+                                                                &lt;div class=&quot;nav_text&quot;&gt;
+                                                                    list
+                                                                &lt;/div&gt;
+                                                            &lt;/div&gt;
+                                    
+                                                            &lt;div class=&quot;column_nav&quot; style=&quot;display: flex; gap: 10px; align-items: center;&quot;&gt;
+                                                                &lt;svg width=&quot;12&quot; height=&quot;12&quot; viewBox=&quot;0 0 24 24&quot; stroke-width=&quot;3&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; color=&quot;currentColor&quot;&gt;&lt;path d=&quot;M6.00005 19L19 5.99996M19 5.99996V18.48M19 5.99996H6.52005&quot; stroke=&quot;currentColor&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; style=&quot;color: #78e183&quot;&gt;&lt;/path&gt;&lt;/svg&gt;
+                                                                &lt;div class=&quot;nav_text&quot;&gt;
+                                                                    list
+                                                                &lt;/div&gt;
+                                                            &lt;/div&gt;
+                                    
+                                                            &lt;div class=&quot;column_nav&quot; style=&quot;display: flex; gap: 10px; align-items: center;&quot;&gt;
+                                                                &lt;svg width=&quot;12&quot; height=&quot;12&quot; viewBox=&quot;0 0 24 24&quot; stroke-width=&quot;3&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; color=&quot;currentColor&quot;&gt;&lt;path d=&quot;M6.00005 19L19 5.99996M19 5.99996V18.48M19 5.99996H6.52005&quot; stroke=&quot;currentColor&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; style=&quot;color: #78e183&quot;&gt;&lt;/path&gt;&lt;/svg&gt;
+                                                                &lt;div class=&quot;nav_text&quot;&gt;
+                                                                    list
+                                                                &lt;/div&gt;
+                                                            &lt;/div&gt;
+                                    
+                                                            &lt;div class=&quot;column_nav&quot; style=&quot;display: flex; gap: 10px; align-items: center;&quot;&gt;
+                                                                &lt;svg width=&quot;12&quot; height=&quot;12&quot; viewBox=&quot;0 0 24 24&quot; stroke-width=&quot;3&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; color=&quot;currentColor&quot;&gt;&lt;path d=&quot;M6.00005 19L19 5.99996M19 5.99996V18.48M19 5.99996H6.52005&quot; stroke=&quot;currentColor&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; style=&quot;color: #78e183&quot;&gt;&lt;/path&gt;&lt;/svg&gt;
+                                                                &lt;div class=&quot;nav_text&quot;&gt;
+                                                                    list
+                                                                &lt;/div&gt;
+                                                            &lt;/div&gt;
+                                    
+                                                            &lt;div class=&quot;column_nav&quot; style=&quot;display: flex; gap: 10px; align-items: center;&quot;&gt;
+                                                                &lt;svg width=&quot;12&quot; height=&quot;12&quot; viewBox=&quot;0 0 24 24&quot; stroke-width=&quot;3&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; color=&quot;currentColor&quot;&gt;&lt;path d=&quot;M6.00005 19L19 5.99996M19 5.99996V18.48M19 5.99996H6.52005&quot; stroke=&quot;currentColor&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; style=&quot;color: #78e183&quot;&gt;&lt;/path&gt;&lt;/svg&gt;
+                                                                &lt;div class=&quot;nav_text&quot;&gt;
+                                                                    list
+                                                                &lt;/div&gt;
+                                                            &lt;/div&gt;
+                                    
+                                                        &lt;/div&gt;
+                                                    &lt;/div&gt;
+                                    
+                                                    &lt;div class=&quot;column&quot;  style=&quot;box-sizing: border-box;&quot;&gt;
+                                                        &lt;div class=&quot;column_heading&quot; style=&quot; text-transform: uppercase; letter-spacing: 1.2px; font-size: 12px; padding-bottom: 30px; font-weight: 600;&quot;&gt;
+                                                            category
+                                                        &lt;/div&gt;
+                                    
+                                                        &lt;div class=&quot;column_list&quot; style=&quot; display: flex; flex-direction: column; gap: 30px;&quot;&gt;
+                                    
+                                                            &lt;div class=&quot;column_nav&quot; style=&quot; display: flex; gap: 10px; align-items: center;&quot;&gt;
+                                                                &lt;svg width=&quot;12&quot; height=&quot;12&quot; viewBox=&quot;0 0 24 24&quot; stroke-width=&quot;3&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; color=&quot;currentColor&quot;&gt;&lt;path d=&quot;M6.00005 19L19 5.99996M19 5.99996V18.48M19 5.99996H6.52005&quot; stroke=&quot;currentColor&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; style=&quot;color: #78e183&quot;&gt;&lt;/path&gt;&lt;/svg&gt;
+                                                                &lt;div class=&quot;nav_text&quot;&gt;
+                                                                    list
+                                                                &lt;/div&gt;
+                                                            &lt;/div&gt;
+                                    
+                                                            &lt;div class=&quot;column_nav&quot; style=&quot;display: flex; gap: 10px; align-items: center;&quot;&gt;
+                                                                &lt;svg width=&quot;12&quot; height=&quot;12&quot; viewBox=&quot;0 0 24 24&quot; stroke-width=&quot;3&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; color=&quot;currentColor&quot;&gt;&lt;path d=&quot;M6.00005 19L19 5.99996M19 5.99996V18.48M19 5.99996H6.52005&quot; stroke=&quot;currentColor&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; style=&quot;color: #78e183&quot;&gt;&lt;/path&gt;&lt;/svg&gt;
+                                                                &lt;div class=&quot;nav_text&quot;&gt;
+                                                                    list
+                                                                &lt;/div&gt;
+                                                            &lt;/div&gt;
+                                    
+                                                            &lt;div class=&quot;column_nav&quot; style=&quot;display: flex; gap: 10px; align-items: center;&quot;&gt;
+                                                                &lt;svg width=&quot;12&quot; height=&quot;12&quot; viewBox=&quot;0 0 24 24&quot; stroke-width=&quot;3&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; color=&quot;currentColor&quot;&gt;&lt;path d=&quot;M6.00005 19L19 5.99996M19 5.99996V18.48M19 5.99996H6.52005&quot; stroke=&quot;currentColor&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; style=&quot;color: #78e183&quot;&gt;&lt;/path&gt;&lt;/svg&gt;
+                                                                &lt;div class=&quot;nav_text&quot;&gt;
+                                                                    list
+                                                                &lt;/div&gt;
+                                                            &lt;/div&gt;
+                                    
+                                                            &lt;div class=&quot;column_nav&quot; style=&quot;display: flex; gap: 10px; align-items: center;&quot;&gt;
+                                                                &lt;svg width=&quot;12&quot; height=&quot;12&quot; viewBox=&quot;0 0 24 24&quot; stroke-width=&quot;3&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; color=&quot;currentColor&quot;&gt;&lt;path d=&quot;M6.00005 19L19 5.99996M19 5.99996V18.48M19 5.99996H6.52005&quot; stroke=&quot;currentColor&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; style=&quot;color: #78e183&quot;&gt;&lt;/path&gt;&lt;/svg&gt;
+                                                                &lt;div class=&quot;nav_text&quot;&gt;
+                                                                    list
+                                                                &lt;/div&gt;
+                                                            &lt;/div&gt;
+                                    
+                                                            &lt;div class=&quot;column_nav&quot; style=&quot;display: flex; gap: 10px; align-items: center;&quot;&gt;
+                                                                &lt;svg width=&quot;12&quot; height=&quot;12&quot; viewBox=&quot;0 0 24 24&quot; stroke-width=&quot;3&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; color=&quot;currentColor&quot;&gt;&lt;path d=&quot;M6.00005 19L19 5.99996M19 5.99996V18.48M19 5.99996H6.52005&quot; stroke=&quot;currentColor&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; style=&quot;color: #78e183&quot;&gt;&lt;/path&gt;&lt;/svg&gt;
+                                                                &lt;div class=&quot;nav_text&quot;&gt;
+                                                                    list
+                                                                &lt;/div&gt;
+                                                            &lt;/div&gt;
+                                    
+                                                            &lt;div class=&quot;column_nav&quot; style=&quot;display: flex; gap: 10px; align-items: center;&quot;&gt;
+                                                                &lt;svg width=&quot;12&quot; height=&quot;12&quot; viewBox=&quot;0 0 24 24&quot; stroke-width=&quot;3&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; color=&quot;currentColor&quot;&gt;&lt;path d=&quot;M6.00005 19L19 5.99996M19 5.99996V18.48M19 5.99996H6.52005&quot; stroke=&quot;currentColor&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; style=&quot;color: #78e183&quot;&gt;&lt;/path&gt;&lt;/svg&gt;
+                                                                &lt;div class=&quot;nav_text&quot;&gt;
+                                                                    list
+                                                                &lt;/div&gt;
+                                                            &lt;/div&gt;
+                                    
+                                                        &lt;/div&gt;
+                                                    &lt;/div&gt;
+                                        &lt;/div&gt;
+                                    
+                                            &lt;div class=&quot;footer_copyinfo&quot; style=&quot;border-top: .7px solid #515050; display: flex; justify-content: space-between; padding: 45px 0; &quot;&gt;
+                                                &lt;div class=&quot;copyright&quot; style=&quot;text-transform: uppercase; font-size: 11px; letter-spacing: 2px; font-weight: 500;&quot;&gt;
+                                                    © Copyright 2024, All Rights Reserved  |   Lagos State Government
+                                                &lt;/div&gt;
+                                    
+                                                &lt;div class=&quot;powered_by&quot; style=&quot;text-transform: uppercase; font-size: 11px; letter-spacing: 2px; font-weight: 500;&quot;&gt;
+                                                &lt;span style=&quot;color: #78e183;&quot;&gt;  Powered by -&lt;/span&gt; Lagos State Ministry of Innovation, Science and Technology
+                                                &lt;/div&gt;
+                                    
+                                            &lt;/div&gt;
+                                        &lt;/div&gt;
+                                    &lt;/footer&gt;
+                            </code>
+                        </pre>
+                       
+
+
+
+
+                
+
+                    </div>
+
+
+                    <span></span>
+                       
+                    
+                </div>
+
+        </div>       
+               
+</div>
+    
+</body>
+</html>

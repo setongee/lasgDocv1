@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+     <!-- css links -->
+
+     <link rel="stylesheet" href="/styles/global/style.css">
+     <link rel="stylesheet" href="/styles/header/style.css">
+     <link rel="stylesheet" href="/styles/body/style.css">
+     <link rel="stylesheet" href="../../styles/lasgmainv2.css">
+ 
+ 
+     <!-- css linked here -->
+
+     <!-- Bootstrap links -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+
+<!-- Bootstrap linked here -->
+
+</head>
+<body>
+
+  <header class="header__fixed">
+
+    <div class="helpers"> 🚀 We just launched v1 of our documentation site, <strong> v2.0 comming soon!</strong> </div>
+
+    <nav class="navbar navbar-expand-sm navbar-light custom__header">
+
+        <div class="container">
+
+            <div class="brandId">
+                <div class="brand__logo"> <img src="/assets/brand/logo.png" alt=""> </div>
+                <div class="brand__name"> <a href="index.html" class="navbar-brand"> style Documentation </a> </div>
+            </div>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+            <div class="collapse navbar-collapse closeup" id="navbarSupportedContent">
+
+                <ul class="navbar-nav">
+
+                    <li class="nav-item"><a class="nav-link" aria-current="page" href="/introduction.html">Get Started</a></li>
+
+                    <li class="nav-item"><a class="nav-link" aria-current="page" href="/pages/style/style.html">Style Blocks</a></li>
+
+                    <li class="nav-item"><a class="nav-link" aria-current="page" href="/pages/components/navigationmenu.html">Components</a></li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+     </nav>
+
+</header>
+    
+
+        
+
+        <div class="container page__body" style="margin-top: 130px;">
+
+ 
+
+            <div class="row player">
+                    <div class="col-3 custom__active custom__row" style="position: fixed; ;left: 10%;">
+                        <div id="list-example" class="list-group">
+                                <a class="list-group-item list-group-item-action" href="../style/style.html">Font Styling</a>
+                                <a class="list-group-item list-group-item-action" href="../../pages/style/typography.html">Typography</a>
+                                <a class="list-group-item list-group-item-action" href="../style/spacing.html"> Spacing</a>
+                                <a class="list-group-item list-group-item-action" href="../style/links.html">Links</a>
+                                <a class="list-group-item list-group-item-action" href="../style/list.html">List</a>
+                                <a class="list-group-item list-group-item-action" href="../style/paragraph.html">Paragraph </a>
+                                <a class="list-group-item list-group-item-action" href="../style/color.html">Color</a>
+                                <a class="list-group-item list-group-item-action" href="../style/wrapper.html">Wrapper</a>
+                                <a class="list-group-item list-group-item-action" href="../style/layout.html">Layout</a>
+                                <a class="list-group-item list-group-item-action active" href="../style/images.html">Images</a>
+                        </div>
+                    </div>
+    
+                    <div class="col-4"></div>
+    
+                    <div class="col-8 float__r">
+ 
+                                    <h2 id="list-item-1">Images</h2>
+
+                                    <h4 id="lis" class="mt-4"></h4>
+    
+                                    <div>
+                                      <div>
+                                        <p>The height and width properties are used to set the height and width of an element. </p>
+          
+                                        <span>The height and width properties do not include padding, borders, or margins. It sets the height/width of the area inside the padding, border, and margin of the element..</span>
+
+                                        </div>
+                                        
+                                      <ul style='text-align: start;color: rgb(33, 37, 41);background-color: rgb(255, 255, 255);font-size: 16px;font-family: system-ui, -apple-system, "' class="mt-3">
+                                          <li><code style="color: var(--bs-code-color);font-size: 0.875em;font-family: var(--bs-font-monospace);">.image-width-25</code> - The image takes 25% of the container</li>
+                                          <li><code style="color: var(--bs-code-color);font-size: 0.875em;font-family: var(--bs-font-monospace);">.image-width-50</code> - The image takes 50% of the container</li>
+                                          <li><code style="color: var(--bs-code-color);font-size: 0.875em;font-family: var(--bs-font-monospace);">.image-width-75</code> - The image takes 75% of the container</li>
+                                          <li><code style="color: var(--bs-code-color);font-size: 0.875em;font-family: var(--bs-font-monospace);">.image-width-100</code> - The image takes 100% of the container</li>
+                                      </ul>
+                      
+                                     </div>
+
+
+
+                                     <div class="mt-3">
+                                      <h4>Use Cases of Images</h4>
+                  
+                                      <ul style='text-align: start;color: rgb(33, 37, 41);background-color: rgb(255, 255, 255);font-size: 16px;font-family: system-ui, -apple-system, "'>
+                                        
+                                          <li>Ensures images resize proportionally within their containers.
+                                          </li>
+                  
+                                          <li> <code style="color: var(--bs-code-color);font-size: 0.875em;font-family: var(--bs-font-monospace);"> max-width</code>  100% prevents images from exceeding their container's width.
+                                          </li>
+                  
+                                          <li>Image widths, such as <code style="color: var(--bs-code-color);font-size: 0.875em;font-family: var(--bs-font-monospace);">50%</code>  or <code style="color: var(--bs-code-color);font-size: 0.875em;font-family: var(--bs-font-monospace);">75%</code>  occupy only that percentage of the parent element's width.
+                                          </li>                       
+          
+                                      </ul>
+                                </div>
+
+                                        <h4 class="mt-5">Image Width</h4>
+        
+                                        <p>
+                                            <table class="table">
+                                                <thead>
+                                                  <tr>
+                                                    <th scope="col"></th>
+                                                    <th scope="col">Sizes</th>
+                                                    <th scope="col">Class name</th>
+                                                    
+                                                  </tr>
+                                                </thead>
+
+                                                <tbody>
+                                                  <tr>
+                                                    <th scope="row">1</th>
+                                                    <td><img style="width: 25%;" src="../../assets/Images/download (1).jpeg" alt=""></td>
+                                                    <td>.image-width-25</td>
+                                                    
+                                                  </tr>
+
+                                                  <tr>
+                                                    <th scope="row">2</th>
+                                                    <td><img style="width: 50%;" src="../../assets/Images/download (1).jpeg" alt=""></td>
+                                                    <td>.image-width-50</td>
+                                                    
+                                                  </tr>
+
+                                                  <tr>
+                                                    <th scope="row">3</th>
+                                                    <td><img style="width: 75%;" src="../../assets/Images/download (1).jpeg" alt=""></td>
+                                                    <td>.image-width-75</td>
+                                                    
+                                                  </tr>
+
+                                                  <tr>
+                                                    <th scope="row">4</th>
+                                                    <td><img style="width: 100%;" src="../../assets/Images/download (1).jpeg" alt=""></td>
+                                                    <td> .image-width-100</td>
+                                                    
+                                                  </tr>
+
+       
+                                                  </tbody>
+                                             </table>
+
+                                        </p>
+
+
+
+                                        <h2 id="list-item-1" class="mt-5"> Object Fit-Images</h2>
+
+                                        <div>
+                                                <p>The object-fit property is used to specify how an image or video should be resized to fit its container.</p>
+                  
+                                                <span>This property tells the content to fill the container in a variety of ways; such as "preserve that aspect ratio" or "stretch up and take up as much space as possible".</span>
+
+                                              <ul style='text-align: start;color: rgb(33, 37, 41);background-color: rgb(255, 255, 255);font-size: 16px;font-family: system-ui, -apple-system, "' class="mt-3">
+                                                  <li><code style="color: var(--bs-code-color);font-size: 0.875em;font-family: var(--bs-font-monospace);">Object fit-Cover</code> - The image keeps its aspect ratio and fills the given dimension. The image will be clipped to fit.</li>
+                                                  <li><code style="color: var(--bs-code-color);font-size: 0.875em;font-family: var(--bs-font-monospace);">Object fit-Contain</code> - The image keeps its aspect ratio, but is resized to fit within the given dimension.</li>
+                                                  <li><code style="color: var(--bs-code-color);font-size: 0.875em;font-family: var(--bs-font-monospace);">Object fit-Fill</code> - This is default. The image is resized to fill the given dimension. If necessary, the image will be stretched or squished to fit.</li>
+                                              </ul>
+                              
+                                        </div>
+
+
+                                        <div class="mt-3">
+                                          <h4>Use Cases of Object Fit</h4>
+                      
+                                          <ul style='text-align: start;color: rgb(33, 37, 41);background-color: rgb(255, 255, 255);font-size: 16px;font-family: system-ui, -apple-system, "'>
+                                            
+                                              <li>Use <code style="color: var(--bs-code-color);font-size: 0.875em;font-family: var(--bs-font-monospace);">Object fit</code>  to ensure media adapts well within custom-shaped containers
+                                              </li>
+                      
+                                               <li><code style="color: var(--bs-code-color);font-size: 0.875em;font-family: var(--bs-font-monospace);">Object fit-fill</code>  scales placeholders or decorative images to fit unique container shapes.</li>
+                      
+                                              <li> <code style="color: var(--bs-code-color);font-size: 0.875em;font-family: var(--bs-font-monospace);">Object fit-Contain</code>  displays images in consistent sizes without cropping.
+                                              </li>  
+                                              
+                                              <li><code style="color: var(--bs-code-color);font-size: 0.875em;font-family: var(--bs-font-monospace);">Object fit-Cover</code>  display images that fill the container while maintaining image quality.</li>
+              
+                                          </ul>
+                                    </div>
+
+                                        <h4 id="lis" class="mt-4"></h4>
+    
+                                            <h4 class=""></h4>
+            
+                                            <p class="mt-3">
+                                                <table class="table">
+                                                    <thead>
+                                                      <tr>
+                                                        <th scope="col"></th>
+                                                        <th scope="col">Examples</th>
+                                                        <th scope="col">Class name</th>
+                                                        
+                                                      </tr>
+                                                    </thead>
+    
+                                                    <tbody>
+                                                      <tr>
+                                                        <th scope="row">1</th>
+                                                        <td>
+                                                          <div style="height: 100px; width: 100px; border-radius: 50px; background-color: black;">
+                                                            <img style="width: 100%; height: 100%; object-fit: cover; border-radius: inherit;" src="../../assets/Images/download (1).jpeg" alt="">
+                                                          </div>
+                                                        </td>
+                                                        <td>.object-fit-cover</td>
+                                                        
+                                                      </tr>
+    
+                                                      <tr>
+                                                        <th scope="row">2</th>
+                                                        <td>
+                                                          <div style="height: 100px; width: 100px; background-color: black;">
+                                                            <img style="width: 100%; height: 100%; object-fit: contain;" src="../../assets/Images/download (1).jpeg" alt="">
+                                                          </div>
+                                                        </td>
+                                                        <td>.object-fit-contain</td>
+                                                        
+                                                      </tr>
+
+                                                      <tr>
+                                                        <th scope="row">3</th>
+                                                        <td>
+                                                          <div style="height: 100px; width: 100px; border-radius: 50%; background-color: black;">
+                                                            <img style="width: 100%; height: 100%; object-fit: fill;" src="../../assets/Images/download (1).jpeg" alt="">
+                                                          </div>
+                                                        </td>
+                                                        <td>.object-fit-fill</td>
+                                                        
+                                                      </tr>
+
+                                                     
+                                                 
+                                                        
+                                               
+                                                      </tbody>
+                                                 </table>
+    
+                                            </p>
+
+
+
+                                                  
+
+
+
+                                                 
+    
+    
+                        
+                    </div>
+    
+            </div>       
+                   
+    </div>
+    
+</body>
+</html>

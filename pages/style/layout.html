@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- css links -->
+
+    <link rel="stylesheet" href="/styles/global/style.css">
+    <link rel="stylesheet" href="/styles/header/style.css">
+    <link rel="stylesheet" href="/styles/body/style.css">
+    <link rel="stylesheet" href="../../styles/lasgmainv2.css">
+
+
+    <!-- css linked here -->
+
+    <!-- Bootstrap links -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap linked here -->
+
+</head>
+
+<body>
+
+    <header class="header__fixed">
+
+        <div class="helpers"> 🚀 We just launched v1 of our documentation site, <strong> v2.0 comming soon!</strong> </div>
+
+        <nav class="navbar navbar-expand-sm navbar-light custom__header">
+    
+            <div class="container">
+    
+                <div class="brandId">
+                    <div class="brand__logo"> <img src="/assets/brand/logo.png" alt=""> </div>
+                    <div class="brand__name"> <a href="index.html" class="navbar-brand"> style Documentation </a> </div>
+                </div>
+    
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+    
+                <div class="collapse navbar-collapse closeup" id="navbarSupportedContent">
+    
+                    <ul class="navbar-nav">
+    
+                        <li class="nav-item"><a class="nav-link" aria-current="page" href="/introduction.html">Get Started</a></li>
+    
+                        <li class="nav-item"><a class="nav-link" aria-current="page" href="/pages/style/style.html">Style Blocks</a></li>
+    
+                        <li class="nav-item"><a class="nav-link" aria-current="page" href="/pages/components/navigationmenu.html">Components</a></li>
+    
+                    </ul>
+    
+                </div>
+    
+            </div>
+    
+         </nav>
+    
+    </header>
+
+
+
+
+    <div class="container page__body" style="margin-top: 130px;">
+
+
+
+        <div class="row player">
+            <div class="col-3 custom__active custom__row" style="position: fixed; left: 10%;">
+                <div id="list-example" class="list-group">
+                    <a class="list-group-item list-group-item-action" href="../style/style.html">Font Styling</a>
+                    <a class="list-group-item list-group-item-action" href="../../pages/style/typography.html">Typography</a>
+                    <a class="list-group-item list-group-item-action" href="../style/spacing.html"> Spacing</a>
+                    <a class="list-group-item list-group-item-action" href="../style/links.html">Links</a>
+                    <a class="list-group-item list-group-item-action" href="../style/list.html">List</a>
+                    <a class="list-group-item list-group-item-action" href="../style/paragraph.html">Paragraph </a>
+                    <a class="list-group-item list-group-item-action" href="../style/color.html">Color</a>
+                    <a class="list-group-item list-group-item-action" href="../style/wrapper.html">Wrapper</a>
+                    <a class="list-group-item list-group-item-action active" href="../style/layout.html">Layout</a>
+                    <a class="list-group-item list-group-item-action" href="../style/images.html">Images</a>
+                </div>
+            </div>
+
+            <div class="col-4"></div>
+
+            <div class="col-8 float__r">
+
+                <h2 id="list-item-1">Layout</h2>
+
+                <h3 id="lis">Display</h3>
+
+                <p>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col"></th>
+                                <th scope="col">Examples</th>
+                                <th scope="col">Class name</th>
+
+                            </tr>
+                        </thead>
+
+
+
+
+                        <div>
+                            <p>The display property defines how an element behaves in the layout (whether it is a block, inline, flex container, etc.). When you combine position: absolute; with different display values, it influences how the element behaves
+                                within the layout and interacts with its parent or container.</p>
+
+                        </div>
+
+                        <ul style='text-align: start;color: rgb(33, 37, 41);background-color: rgb(255, 255, 255);font-size: 16px;font-family: system-ui, -apple-system, "' class="mt-3">
+                            <li><code style="color: var(--bs-code-color);font-size: 0.875em;font-family: var(--bs-font-monospace);">.display-flex</code> - The .item elements inside it will be arranged horizontally (since the default is flex-direction: row)
+                                and spaced out evenly.</li>
+                            <li><code style="color: var(--bs-code-color);font-size: 0.875em;font-family: var(--bs-font-monospace);">.display-none</code> - The display: none; value removes an element completely from the document flow.</li>
+                            <li><code style="color: var(--bs-code-color);font-size: 0.875em;font-family: var(--bs-font-monospace);">.display-block</code> - Makes an element block-level, taking up the full width of its container and starting on a new line.</li>
+                            <li><code style="color: var(--bs-code-color);font-size: 0.875em;font-family: var(--bs-font-monospace);">.display-grid</code> - The grid value turns an element into a grid container, which allows you to create two, three or four dimensional layouts.
+                                </li>
+                        </ul>
+
+
+
+                        <div class="mt-3">
+                            <h4>Use Cases of Display</h4>
+        
+                            <ul style='text-align: start;color: rgb(33, 37, 41);background-color: rgb(255, 255, 255);font-size: 16px;font-family: system-ui, -apple-system, "'>
+                              
+                                <li>Be cautious when using display: none, as it can make elements inaccessible to screen readers. Consider using visibility or opacity if accessibility is a concern.</li>
+        
+                                <li>For complex layouts, Flexbox and Grid are preferred over older methods like float or inline-block.</li>
+        
+                                <li>Use display: flex or display: grid to center modals or overlays on the screen.</li>
+
+                                <li>The display: flex property is used to create flexible layouts. It allows child elements to be aligned and distributed dynamically within a container.</li>
+
+                                <li>Elements with display: block occupy the entire width of their container, creating line breaks before and after the element.</li>
+
+                            </ul>
+                      </div>
+
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td> <a href="" class="text-underlined"> display-flex</a></td>
+                                <td>.display-flex</td>
+
+                            </tr>
+
+                            <tr>
+                                <th scope="row">2</th>
+                                <td> <a href="" class="text-underlined">display-none</a></td>
+                                <td>.display-none</td>
+
+                            </tr>
+
+                            <tr>
+                                <th scope="row">3</th>
+                                <td> <a href="" class="text-underlined">display-block</a></td>
+                                <td>.display-block</td>
+
+                            </tr>
+
+                            <tr>
+                                <th scope="row">4</th>
+                                <td> <a href="" class="text-underlined"> display-grid</a></td>
+                                <td>.display-grid</td>
+
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </p>
+
+
+
+
+
+
+
+
+                <h2 id="list-item-1" class="mt-4"></h2>
+
+                <h4 id="lis" class="mt-4"></h4>
+
+                <p>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col"></th>
+                                <th scope="col">Examples</th>
+                                <th scope="col">Class name</th>
+
+                            </tr>
+                        </thead>
+
+
+                        <h2> Postion</h2>
+
+                        <div>
+                            <p> The position property is used to control the positioning of an element within a page or container. It determines how the element is placed on the screen and how it interacts with other elements. The position property works
+                                in conjunction with properties like top, right, bottom, and left to define the element's exact location.</p>
+
+                        </div>
+
+                        <ul style='text-align: start;color: rgb(33, 37, 41);background-color: rgb(255, 255, 255);font-size: 16px;font-family: system-ui, -apple-system, "' class="mt-3">
+                            <li><code style="color: var(--bs-code-color);font-size: 0.875em;font-family: var(--bs-font-monospace);">.position-absolute</code> - Position absolute property is used to position an element relative to its nearest positioned ancestor
+                                (an ancestor element that has any position value other than static).</li>
+                            <li><code style="color: var(--bs-code-color);font-size: 0.875em;font-family: var(--bs-font-monospace);">.position-fixed</code> - Fixed positioning removes the element from the normal document flow and positions it relative to the
+                                viewport (the browser window). The element will stay in the same position on the screen even when the page is scrolled.</li>
+                            <li><code style="color: var(--bs-code-color);font-size: 0.875em;font-family: var(--bs-font-monospace);">.position-static</code> - The position: static property is the default positioning behavior for most elements. When an element
+                                has position: static, it follows the normal flow of the document, meaning it is positioned based on where it appears in the engage it's structure, and its position cannot be modified using the top, right, bottom, or left
+                                properties.</li>
+                            <li><code style="color: var(--bs-code-color);font-size: 0.875em;font-family: var(--bs-font-monospace);">.position-relative</code> - When you set an element to position: relative;, it is positioned relative to its original position
+                                in the document flow. It still takes up space in the layout, but you can adjust its position using the top, right, bottom, and left properties. </li>
+                            <li><code style="color: var(--bs-code-color);font-size: 0.875em;font-family: var(--bs-font-monospace);">.position-sticky</code> - Sticky positioning is a hybrid between relative and fixed positioning. The element is treated as
+                                relative until it reaches a specified position (usually using top, right, bottom, or left), at which point it becomes fixed within the viewport. The element sticks to its position as the page scrolls until it reaches its
+                                containing block (e.g., a parent element or a defined scrollable area).</li>
+                        </ul>
+
+
+                        <div class="mt-3">
+                            <h4>Use Cases of Position</h4>
+        
+                            <ul style='text-align: start;color: rgb(33, 37, 41);background-color: rgb(255, 255, 255);font-size: 16px;font-family: system-ui, -apple-system, "'>
+                              
+                                <li>relative: Allows an element to be positioned relative to its normal position.
+                                </li>
+        
+                                <li>absolute: Positions an element relative to the nearest positioned (non-static) ancestor.
+                                </li>
+        
+                                <li>fixed: Positions an element relative to the viewport and remains fixed during scrolling.
+                                </li>
+
+                                <li>Use position: sticky for navigation bars or headers to maintain their visibility as users scroll.</li>
+
+                                <li>Sticky table headers also enhance usability by keeping column titles accessible while viewing large datasets.</li>
+
+                            </ul>
+                      </div>
+
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td> <a href="" class=""> Position-absolute</a></td>
+                                <td>.position-absolute</td>
+
+                            </tr>
+
+                            <tr>
+                                <th scope="row">2</th>
+                                <td> <a href="" class="">postion-fixed</a></td>
+                                <td>.position-fixed</td>
+
+                            </tr>
+
+                            <tr>
+                                <th scope="row">3</th>
+                                <td> <a href="" class="">Postion-static</a></td>
+                                <td>.position-static</td>
+
+                            </tr>
+
+                            <tr>
+                                <th scope="row">4</th>
+                                <td> <a href="" class="">Postion relative</a></td>
+                                <td>.position-relative</td>
+
+                            </tr>
+
+                            <tr>
+                                <th scope="row">5</th>
+                                <td> <a href="" class="">Postion sticky</a></td>
+                                <td>.position-sticky</td>
+
+                            </tr>
+
+
+                        </tbody>
+
+
+                        </table>
+                </p>
+
+
+
+
+                <!-- <p>
+                    
+
+
+                        <h2> Grid</h2>
+
+                        <div>
+                            <p> Grid Layout system, often referred to as CSS Grid, is a powerful tool for creating two-dimensional layouts (both rows and columns) in web design. It allows you to create complex and responsive layouts with ease, providing control
+                                over both the horizontal (row) and vertical (column) placement of items on the page.</p>
+
+                        </div>
+
+
+
+                        <div class="mt-3">
+                            <h4>Use Cases of Grid</h4>
+        
+                            <ul style='text-align: start;color: rgb(33, 37, 41);background-color: rgb(255, 255, 255);font-size: 16px;font-family: system-ui, -apple-system, "'>
+                              
+                                <li>Use display: grid to create a container where child elements can be positioned in rows and columns.
+                                </li>
+        
+                                <li>Position items explicitly within specific rows and columns.
+                                </li>
+        
+                                <li>Share grid tracks between parent and child grids for more complex designs e.g  creating multi-layered designs where child elements align seamlessly with the parent grid.
+                                </li>                       
+
+                            </ul>
+                      </div>
+
+                       
+
+
+                        <h3 class="mt-4">Two-way grid system</h3>
+
+                        <div>
+                            <p>The two-way grid system allows you to arrange elements across both rows and columns, making it ideal for creating complex layouts such as dashboards, photo galleries, and responsive websites.</p>
+
+                        </div>
+
+
+                        <div class="row mt-3">
+
+                            <div class="col bg-green text-light">
+                                Column
+                            </div>
+
+                            <div class="col bg-dark text-light">
+                                Column
+                            </div>
+
+                        </div>
+
+
+                        <h3 class="mt-4">Three-way grid system</h3>
+
+                        <div>
+                            <p> The 3-way grid system typically refers to using the grid layout for creating three main dimensions of a page layout:</p>
+
+                        </div>
+
+                        <div class="row mt-3 text-light">
+
+                            <div class="col bg-green">
+                                Column
+                            </div>
+
+                            <div class="col bg-dark">
+                                Column
+                            </div>
+
+                            <div class="col bg-green">
+                                Column
+                            </div>
+
+                        </div>
+
+
+
+                        <h3 class="mt-4">Four-way grid system</h3>
+
+                        <div>
+                            <p>The 4-way grid system refers to a flexible and responsive layout mechanism that is based on the grid system in CSS. It allows you to create layouts with four axes of control</p>
+
+                        </div>
+
+                        <div class="row mt-3 text-light">
+
+                            <div class="col bg-green">
+                                Column
+                            </div>
+
+                            <div class="col bg-dark">
+                                Column
+                            </div>
+
+                            <div class="col bg-green">
+                                Column
+                            </div>
+
+                            <div class="col bg-dark">
+                                Column
+                            </div>
+
+                        </div>
+
+
+
+                </p> -->
+
+
+
+
+
+
+
+            </div>
+        </div>
+
+    </div>
+    </div>
+
+    </div>
+
+    </div>
+
+</body>
+
+</html>

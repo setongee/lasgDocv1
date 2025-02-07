@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+     <!-- css links -->
+
+     <link rel="stylesheet" href="/styles/global/style.css">
+     <link rel="stylesheet" href="/styles/header/style.css">
+     <link rel="stylesheet" href="/styles/body/style.css">
+     <link rel="stylesheet" href="../../styles/lasgmainv2.css">
+ 
+ 
+     <!-- css linked here -->
+
+     <!-- Bootstrap links -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+
+<!-- Bootstrap linked here -->
+
+</head>
+<body>
+
+  <header class="header__fixed">
+
+    <div class="helpers"> 🚀 We just launched v1 of our documentation site, <strong> v2.0 comming soon!</strong> </div>
+
+    <nav class="navbar navbar-expand-sm navbar-light custom__header">
+
+        <div class="container">
+
+            <div class="brandId">
+                <div class="brand__logo"> <img src="/assets/brand/logo.png" alt=""> </div>
+                <div class="brand__name"> <a href="index.html" class="navbar-brand"> style Documentation </a> </div>
+            </div>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+            <div class="collapse navbar-collapse closeup" id="navbarSupportedContent">
+
+                <ul class="navbar-nav">
+
+                    <li class="nav-item"><a class="nav-link" aria-current="page" href="/introduction.html">Get Started</a></li>
+
+                    <li class="nav-item"><a class="nav-link" aria-current="page" href="/pages/style/style.html">Style Blocks</a></li>
+
+                    <li class="nav-item"><a class="nav-link" aria-current="page" href="/pages/components/navigationmenu.html">Components</a></li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+     </nav>
+
+</header>
+    
+
+        
+
+        <div class="container page__body" style="margin-top: 130px;">
+
+ 
+
+            <div class="row player">
+                    <div class="col-3 custom__active custom__row" style="position: fixed; left: 10%;">
+                        <div id="list-example" class="list-group">
+                                <a class="list-group-item list-group-item-action" href="../style/style.html">Font Styling</a>
+                                <a class="list-group-item list-group-item-action" href="../../pages/style/typography.html">Typography</a>
+                                <a class="list-group-item list-group-item-action" href="../style/spacing.html"> Spacing</a>
+                                <a class="list-group-item list-group-item-action active" href="../style/links.html">Links</a>
+                                <a class="list-group-item list-group-item-action" href="../style/list.html">List</a>
+                                <a class="list-group-item list-group-item-action" href="../style/paragraph.html">Paragraph </a>
+                                <a class="list-group-item list-group-item-action" href="../style/color.html">Color</a>
+                                <a class="list-group-item list-group-item-action" href="../style/wrapper.html">Wrapper</a>
+                                <a class="list-group-item list-group-item-action" href="../style/layout.html">Layout</a>
+                                <a class="list-group-item list-group-item-action" href="../style/images.html">Images</a>
+                        </div>
+                    </div>
+    
+                    <div class="col-4"></div>
+    
+                    <div class="col-8 float__r">
+    
+                                    
+                        <p>
+                            <table class="table">
+                                <thead>
+                                  <tr>
+                                    <th scope="col"></th>
+                                    <th scope="col">Examples</th>
+                                    <th scope="col">Class name</th>
+                                    
+                                  </tr>
+                                </thead>
+
+                                <h3>Links</h3> 
+
+                                <div>
+                                  <p> A link is created using the <a> (anchor) tag, which is used to define hyperlinks that navigate users from one page or location to another.</p>
+
+                                <p>Links are a fundamental part of the web, allowing users to navigate between web pages, open external websites, or even perform actions like sending emails or downloading files.</p>
+
+                             
+
+                                  <ul style='text-align: start;color: rgb(33, 37, 41);background-color: rgb(255, 255, 255);font-size: 16px;font-family: system-ui, -apple-system, "'>
+                                    
+                                      <li><code style="color: var(--bs-code-color);font-size: 0.875em;font-family: var(--bs-font-monospace);">a</code> - The anchor tag is used to create a hyperlink.</li>
+
+                                      <li><code style="color: var(--bs-code-color);font-size: 0.875em;font-family: var(--bs-font-monospace);">href</code> - The hyperlink reference attribute specifies the target URL or location where the link should navigate.</li>
+
+                                      <li><code style="color: var(--bs-code-color);font-size: 0.875em;font-family: var(--bs-font-monospace);">link text</code> - The visible text or content within the anchor tags, which users can click.</li>
+                                    
+                                  </ul>
+                            </div>
+
+
+                               <h2>Underlined Links</h2>
+
+                               <div>
+                                <p> Underlined links refer to text that is styled with an underline to indicate that it is a hyperlink (a clickable link). By default, most browsers automatically underline links (using the <a> tag) to visually distinguish them from regular text.</p>
+
+
+                                  <div>
+                                    <h4>Use Cases of Underlined Links</h4>
+                
+                                    <ul style='text-align: start;color: rgb(33, 37, 41);background-color: rgb(255, 255, 255);font-size: 16px;font-family: system-ui, -apple-system, "'>
+                                      
+                                        <li>Underlined links are easier to distinguish from regular text, especially for individuals with low vision or color blindness.</li>
+                
+                                        <li>Underlined text provides a clear visual cue that an element is interactive, reducing confusion for users.</li>
+                
+                                        <li>Underlined links within text highlight important references or related content, improving SEO and readability.</li>
+
+                                        <li>Emphasize resources or promotions by making links visually distinct with an underline.</li>
+
+                                        <li>Highlight references or additional reading materials in articles or tutorials.</li>
+
+                                        <li>Only underline actual links to prevent confusion with plain text.</li>
+                                      
+                                    </ul>
+                              </div>
+
+                          
+
+                          </div>
+
+                                <tbody>
+                                  <tr>
+                                    <th scope="row">1</th>
+                                    <td> <a href="" class="text-underlined">Lagos State</a></td>
+                                    <td>.text-underlined</td>
+                                    
+                                  </tr>
+
+                                </tbody>
+                              </table>
+                        </p>
+
+
+                        <p>
+                            <table class="table">
+                                <thead>
+                                  <tr>
+                                    <th scope="col"></th>
+                                    <th scope="col">Examples</th>
+                                    <th scope="col">Class name</th>
+                                    
+                                  </tr>
+                                </thead>
+
+                                
+                               <h2 class="mt-5">Active State</h2>
+
+                               <div>
+                                <p> The active state refers to the condition where an element, typically a link or a button, is in an "active" state — that is, when it is being clicked or activated by the user. This state is often used to provide visual feedback to the user, indicating that an element is currently being interacted with.</p>
+
+                                <li>The <code style="color: var(--bs-code-color);font-size: 0.875em;font-family: var(--bs-font-monospace);">:active</code> -  pseudo-class is used to define the styling for an element when it is in the active state.</li>
+
+
+                                <div class="mt-3">
+                                  <h4>When using the active State:</h4>
+              
+                                  <ul style='text-align: start;color: rgb(33, 37, 41);background-color: rgb(255, 255, 255);font-size: 16px;font-family: system-ui, -apple-system, "'>
+                                    
+                                      <li> Change the link's appearance (e.g., color, background, border) while it is being clicked to indicate the active state.</li>
+              
+                                      <li>Ensure the <code style="color: var(--bs-code-color);font-size: 0.875em;font-family: var(--bs-font-monospace);">:active</code> state is styled for users who navigate using the keyboard (e.g., pressing "Enter" on a link).</li>
+              
+                                      <li> Use the active state for short-lived visual changes during interaction (e.g., a color change when clicking).</li>
+
+                                      <li>If buttons and links are styled similarly, ensure consistent active-state feedback for both.</li>
+
+                                      <li> Use subtle effects like shadows, scaling, or border changes to give links a tactile feel during interaction.</li>
+
+                                      <li>Ensure the :active state doesn’t make links look disabled or inactive (e.g., don’t use a grayed-out appearance unless it's intentional).</li>
+
+                                      <li> Avoid heavy animations or transitions for the active state to ensure immediate feedback without delay.</li>
+                                    
+                                  </ul>
+                            </div>
+
+                                
+
+                          </div>
+
+                                <tbody>
+                                  <tr>
+                                    <th scope="row">1</th>
+                                    <td> <a href="" class="active">Lagos State</a></td>
+                                    <td> .active</td>
+                                    
+                                  </tr>
+
+                                </tbody>
+                              </table>
+                        </p>
+
+
+                                     
+                        <p>
+                            <table class="table">
+                                <thead>
+                                  <tr>
+                                    <th scope="col"></th>
+                                    <th scope="col">Examples</th>
+                                    <th scope="col">Class name</th>
+                                    
+                                  </tr>
+                                </thead>
+
+                          
+                               <h2 class="mt-5">Hover State</h2>
+
+                               <div>
+                                <p> 
+                                  The hover state in refers to the condition when a user positions their mouse pointer (or cursor) over an interactive element, such as a link, button, or any clickable item, but without clicking it. It is a common visual effect used to provide feedback to users, indicating that the element is interactive and can be clicked or engaged with.</p>
+
+
+
+                                  <li>The <code style="color: var(--bs-code-color);font-size: 0.875em;font-family: var(--bs-font-monospace);">:hover</code> - pseudo-class is used to define the styles for an element when the user hovers their mouse over it.</li>
+
+
+                                  <div class="mt-3">
+                                    <h4>When using the hover state:</h4>
+                
+                                    <ul style='text-align: start;color: rgb(33, 37, 41);background-color: rgb(255, 255, 255);font-size: 16px;font-family: system-ui, -apple-system, "'>
+                                      
+                                        <li> Change the text color to contrast with the original color (e.g., blue to red).</li>
+                
+                                        <li>Add an underline, border, or background highlight to emphasize the link.</li>
+                
+                                        <li> Slightly adjust opacity for subtle effects.</li>
+  
+                                        <li>Ensure all links have similar hover effects for a cohesive user experience.</li>
+  
+                                        <li>Touchscreen devices don’t support hover states, so ensure the links are identifiable without hover effects.</li>
+  
+                                        <li>Subtle animations (e.g., grow, shrink, or bounce) can enhance the user experience without being distracting.</li>
+  
+                                        <li> Use <code style="color: var(--bs-code-color);font-size: 0.875em;font-family: var(--bs-font-monospace);">cursor:pointer</code> to visually indicate interactivity.</li>
+                                      
+                                    </ul>
+                              </div>
+
+
+                          </div>
+
+                                <tbody>
+                                  <tr>
+                                    <th scope="row">1</th>
+                                    <td> <a href="" class="hover">Lagos State</a></td>
+                                    <td>.hover</td>
+                                    
+                                  </tr>
+
+                                </tbody>
+                              </table>
+                        </p>
+
+
+                        <p>
+                            <table class="table">
+                                <thead>
+                                  <tr>
+                                    <th scope="col"></th>
+                                    <th scope="col">Examples</th>
+                                    <th scope="col">Class name</th>
+                                    
+                                  </tr>
+                                </thead>
+
+                          
+                               <h2 class="mt-5">Disabled State</h2>
+
+                               <div>
+                                <p> A disabled link in HTML refers to a link that is visually or functionally inactive, meaning it cannot be clicked or interacted with.</p>
+
+                                <div class="mt-3">
+                                  <h4>When using the disabled state:</h4>
+              
+                                  <ul style='text-align: start;color: rgb(33, 37, 41);background-color: rgb(255, 255, 255);font-size: 16px;font-family: system-ui, -apple-system, "'>
+                                    
+                                      <li> Use styles like gray text, reduced opacity, or strike-throughs to clearly indicate the link is disabled</li>
+              
+                                      <li>Avoid only relying on color to indicate the disabled state; add additional visual cues for colorblind users.</li>
+              
+                                      <li>Ensure disabled links are styled consistently across the application to avoid confusion.</li>
+
+                                      <li>Disabled state cam also work with other components e.g Buttons, Cards e.t.c</li>
+
+                                      <li> Use <code style="color: var(--bs-code-color);font-size: 0.875em;font-family: var(--bs-font-monospace);">disabled</code> property to activate a disabled state</li>
+                                    
+                                  </ul>
+                            </div>
+
+                          </div>
+
+                                <tbody>
+                                  <tr>
+                                    <th scope="row">1</th>
+                                    <td> <a href="" class="disabled">Lagos State</a></td>
+                                    <td>.disabled</td>
+                                    
+                                  </tr>
+
+                                </tbody>
+                              </table>
+                        </p>
+    
+    
+                        </div>
+                    </div>
+    
+            </div>       
+                   
+    </div>
+    
+</body>
+</html>
